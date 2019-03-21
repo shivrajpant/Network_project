@@ -1,0 +1,4 @@
+Topic: Analyis of Bitcoin network
+
+-Find data set
+- find the alogorithms (network analysis algorthms - social properties, etc)

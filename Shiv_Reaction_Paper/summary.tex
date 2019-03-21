@@ -1,0 +1,50 @@
+%!TEX root = paper.tex
+
+\section{Summary}\label{sec:summary}
+%\vspace{-2pt}
+\subsection{Summary of \cite{aw2018analyzing}}The authors of \cite{aw2018analyzing} analyze the preferential attachment phenomenon (also known as "richer get richer") in the bitcoin transaction network where nodes represent users and edges represent transactions among users. This networks also includes the user review ratings of the transaction representated by the weights of edges.  
+The study is motivated by the fact that user ratings play an important role in the e-commerce where it is not possible for a user to validate any product before purchase. The authors state that Ecommerce depends largly on trust and reputation of merchant and reviews are primary means of gaining trust. 
+
+The datasets chosen for the study are from popular bitcoin marketplaces- BITCOIN ALPHA and BITCOIN OTC. BITCOIN ALPHA is an online marketplace where anonymous users (vendors and customers) conduct transactions via the BITCOIN cryptocurrency. The transactions may involve exchange of bitcoins for cash as well as buying and selling of products. Customers rate their transactions with rating levels ranging from -10 to 10. The continuous transactions with ratings give rise to a network that is continuously evolving directed wighted trust network. The authors have also generated a synthetic network model with rating attributes. BITCOIN ALPHA is used as the basis of modelling and analysis wheras BITCOIN OTC is used to verify the synthetic model of the network. By analyzing preferential attachment phenomenon, the authors expect that the rating of nodes with high average should increase to maximum value 10 as the network evolves whereas the nodes with low average rating would drop to minimum value -10. However, contrary to above expectations, the actual results obtained are interesting where the user ratings converge to value approximately 2.
+The methodology used for the analysis is basically temporal network analysis, in which evolution of the network is recorded between Nov 2010 to Jan 2016. In addition to analyzing overall network, the authors have temporally analyzed by tracking a few users.To get preferential attachment, the authors have focussed on weighted in-degree and average rating. Their major findings can be summarized as follows:
+\begin{itemize}
+	\denseitems
+	\item 
+	Ratings tend to be highest among small networks of presumably friendships whereas, users outside of those groups tend get lower rating
+	\item 
+	Despite the outliers, the majority of most-rated users exhibit the preferential attachment (richer get richer) phenomenon
+	\item 
+	The maximum and minimum ratings are found in users with few ratings. As a user performs transaction outside the closed group, the rating converges to approximately two. The overall temporal results show the preferential attachment.
+	\item 
+	The rating distributions from synthetic network model show that the users of higher frequency of ratings converge to an average value of 2.
+	
+\end{itemize}
+
+The paper is fully relevant to the course because it is devoted to analyzing the weighted signed social networks. The methodology is entirely based on the network analysis. The aurthors have used networks tools such as networkx to analyze the networks. The results and findings are drawn from real-world networks and useful to a varitey of other networks.
+
+\subsection{Summary of \cite{kumar2016edge}}
+This paper proposes a solution to the problem of predicting weights of the links in weighted signed networks using two novel measures "goodness" and "fairness" of node behaviour. The "goodness" metric measures how much a node liked or trusted by other nodes and the "fairness" metric measures how fairly the node rates other nodes' level of trust. 
+
+The methodololgy used for approaching the solution is provided as "Fairness-Goodness Algorithm (FGA)" which basically involves computation of fairness and goodness scores for each node in the network. 
+
+The six datasets used for the analysis and evaluation are:
+\begin{itemize}
+	\denseitems
+	\item 
+	BitCoin OTC network
+	\item
+	Bitcoin ALPHA
+	\item
+	Wikepedia Request-for-Adminship
+	\item
+	Wikepedia editor network
+	\item
+	Epinion network
+	\item
+	Twitter India Election data
+\end{itemize}	
+A series of experiments have been performed to evaluate the performance of various features for edge weight prediction viz. Leave-one-out, Leave N\% out, and multiple rergression predictions. Results are found promising for the analyzed datasets. The fairness and goodness metrics almost always have the best predictive power when compared against several other algorithms in the literature.
+
+It is quite obvious that the paper is relevant to our course. It deals with the analysis of real-world social networks with interesting results.
+
+The two papers studied are connected in the sense that both deal with the special type of networks called "weighted signed social networks". Both papers have discussed interesting properties about these networks. 

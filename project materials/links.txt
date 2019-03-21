@@ -1,0 +1,5 @@
+http://beautifuldata.net/2015/01/querying-the-bitcoin-blockchain-with-r/?fbclid=IwAR02Z_ImlkVpBStIAHvHEIpxBHqmgypzafHml6vk2tawIr5vafMSKJNFZPA
+
+https://blog.patricktriest.com/analyzing-cryptocurrencies-python/?fbclid=IwAR1EjjlRqflnA5euseQsz5i5MyO1mL1GrqeD85CihQqecsV5ngInQk_ybXU
+
+https://senseable2015-6.mit.edu/bitcoin/?fbclid=IwAR1iVbp8NE_wnjnV6LTZRRRYXwBtF4xuOrkvyHLg92iaPtQCtuaWzHTt6Tc

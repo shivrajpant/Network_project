@@ -1,0 +1,3 @@
+https://www.coursera.org/lecture/python-social-network-analysis/preferential-attachment-model-abipd
+
+http://www2.unb.ca/~ddu/6634/Lecture_notes/Lecture7_network_models.pdf

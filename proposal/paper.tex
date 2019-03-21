@@ -1,0 +1,206 @@
+%!TEX root = paper.tex
+
+%\documentclass[10pt, conference, compsocconf]{IEEEtran}
+%\documentclass[10pt,journal,cspaper,compsoc]{IEEEtran}
+%\documentclass{article}
+
+\documentclass[conference]{IEEEtran}
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+%\usepackage{alg}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{amsfonts}
+%\usepackage{appendix}
+\usepackage[usenames]{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage{enumitem}
+\usepackage{graphicx}
+%\usepackage{latex8}
+\usepackage{listings}
+\usepackage{float}
+%\lstloadlanguages{Java}
+\usepackage{mathabx}
+\usepackage{multirow}
+\usepackage{soul}  % for highlighting without wrapping problems of package 'color'
+%\usepackage{subfigure}
+\usepackage{subfig}
+\usepackage{times}
+\usepackage{tipa}
+\usepackage{url}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+\usepackage{algpseudocode}
+\makeatletter
+\renewcommand{\ALG@beginalgorithmic}{\small}
+\makeatother
+\usepackage{booktabs}
+\usepackage{bigstrut}
+%\usepackage[justification=centering]{caption}
+\usepackage{caption}
+\usepackage{textcomp}
+% the next two packages must be in this order
+\usepackage[hidelinks]{hyperref} % latest version of MiKTex does not support the "hidelinks" option
+%\usepackage{hyperref}
+\usepackage{cite}
+
+\definecolor{lightblue}{rgb}{.90,.95,1}
+\newcommand{\rs}[1]{\sethlcolor{green}\hl{#1}}
+\newcommand{\hc}[1]{\sethlcolor{yellow}\hl{#1}}
+\newcommand{\rsst}[1]{\setstcolor{green}\st{#1}}
+\newcommand{\hcst}[1]{\sethlcolor{lightblue}\st{#1}}
+
+%\newcommand{\tool}{\textsc{TheToolOrTechniqueName}}
+\newcommand{\tech}{\mbox{\textsc{ICCVis}}}
+\newcommand{\tool}{\tech}
+
+\newcommand{\footnoteremember}[2]{
+\footnote{#2}
+\newcounter{#1}
+\setcounter{#1}{\value{footnote}}
+}
+\newcommand{\footnoterecall}[1]{
+\footnotemark[\value{#1}]
+}
+
+\usepackage{color}
+\usepackage{listings}
+\usepackage{parcolumns}
+\usepackage{pifont,calc,xcolor}
+\definecolor{verylightgray}{gray}{0.85}
+\newlength\lsthorizontalpadding
+\setlength\lsthorizontalpadding{3pt}
+\newcommand*\lstnumberstyle{\ttfamily\scriptsize}
+\newlength\lstnumbersep
+\setlength\lstnumbersep{2pt}
+\newlength\lstnumberwidth
+\setlength\lstnumberwidth{\widthof{\lstnumberstyle00}+\lstnumbersep+\lsthorizontalpadding}
+\lstset{
+%language=Java,captionpos=b,tabsize=3,frame=lines,keywordstyle=\color{blue},
+%commentstyle=\color{darkgreen},stringstyle=\color{red},
+%numbers=left,numberstyle=\tiny,numbersep=5pt,breaklines=true,showstringspaces=false,
+%basicstyle=\footnotesize,emph={label},
+language=Java,
+keywordstyle=\color{blue}\bf\mdseries,
+stringstyle=\color{red},
+basicstyle=\small\ttfamily,
+%basicstyle=\small\sffamily,
+numbers=left,
+numberstyle=\tiny,
+frame=none,
+columns=fullflexible,
+showstringspaces=false
+    %,breaklines=true%
+    %,tabsize=4%
+    ,firstnumber=last
+    ,showstringspaces=false%
+    ,numbers=left%
+    ,numbersep=\lstnumbersep%
+    ,numberstyle=\lstnumberstyle%
+    ,framesep=0pt%
+    ,xleftmargin=\lstnumberwidth%
+    ,framexleftmargin=\lsthorizontalpadding%
+    ,xrightmargin=\lsthorizontalpadding%
+    ,framexrightmargin=\lsthorizontalpadding%
+    %,backgroundcolor=\color{verylightgray}%
+    %,postbreak=\ding{229}\space%
+}
+%\usepackage{flushend}
+\usepackage{balance}
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\def\denseitems{
+  \itemsep1pt plus1pt minus1pt
+  \parsep0pt plus0pt
+  \parskip0pt\topsep0pt}
+\setlength{\parskip}{0.2pt}
+
+\newcommand{\titraiseddagger}{\raisebox{5pt}[\height][\depth]{$\dagger$}}
+\newcommand{\auraiseddagger}{\small\raisebox{4pt}[\height][\depth]{$\dagger$}}
+\newcommand{\titraisedasterisk}{\raisebox{7pt}[\height][\depth]{\tiny$\Asterisk$}}
+\newcommand{\auraisedasterisk}{\small\raisebox{5pt}[\height][\depth]{\tiny$\Asterisk$}}
+
+%\newcommand{\pantemail}{shiv.panti@wsu.edu}
+
+%\newfont{\ttlsc}{phvb8t at 15pt}
+%\newfont{\autt}{pcrr8t at 11pt}
+
+\begin{document}
+%\pagenumbering{gobble} %arabic}
+  \pagestyle{plain}
+%  \pagestyle{empty}
+
+\title{Proposal Topic}
+
+\author{\IEEEauthorblockN{Shiv Raj Pant, Xiaoqin Fu}
+\IEEEauthorblockA{School of Electrical Engineering and Computer Science\\
+Washington State University\\
+Pullman, WA\\
+Email: \{shiv.pant,  xiaoqin.fu\}@wsu.edu}}
+%\and
+%\IEEEauthorblockN{Xiaoqin Fu}
+%\IEEEauthorblockA{School of Electrical Engineering and Computer Science\\
+%Washington State University\\
+%Pullman, WA\\
+%Email: xiaoqin.fu@wsu.edu}}
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+% make the title area
+\maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
+%\thispagestyle{empty} % removes page number from first page
+
+\input{abstract}
+
+%\IEEEpeerreviewmaketitle
+
+\input{introduction}
+\input{related_work}
+\input{methodology}
+%\input{evaluation}
+\input{plan}
+
+%%\vspace{-2pt}
+%\section*{Acknowledgment}
+
+%%\vspace{-3pt}
+%% no keywords
+%%\keywords{blah}
+
+%\IEEEpeerreviewmaketitle
+
+
+%{
+%\baselineskip=12pt
+%\setstretch{0.9}
+
+%%% latex8 is old. IEEEtran is IEEEtranS but not sorted
+%\bibliographystyle{latex8}
+%\bibliographystyle{IEEEtran}
+%\bibliographystyle{IEEEtran}
+
+%\balance
+%{
+%\bibliography{paper}
+%}
+%}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{IEEEtran}
+
+%\balance
+
+\bibliography{References}
+%\newpage
+%\input{notes}
+
+%\newpage
+%\input{appendix}
+
+\end{document}

@@ -1,0 +1,2496 @@
+%!TEX root = paper.tex
+
+%-- Non-standard abbreviations (journals):
+% @STRING{lncs     = "Lecture Notes in Computer Science"}
+%@STRING{ACMTOPLAS = "ACM Transactions on Programming Languages and Systems"}
+%@STRING{ACMTOSEM = "ACM Transactions on Software Engineering and Methodology"}
+%@STRING{COMMACM = "Communications of the ACM"}
+%@STRING{EMSE    = "Empirical Software Engineering"}
+%@STRING{IEEETSE = "IEEE Transactions on Software Engineering"}
+%@STRING{JSS     = "Journal of Systems and Software"}
+%@STRING{JSTVR   = "Journal of Software Testing, Verification and Reliability"}
+
+%-- Non-standard abbreviations (conf.s):
+%@STRING{icse98   = "Proceedings of 20$^{th}$ International Conference on
+%Software Engineering"}
+%@STRING{ASE     = "Proceedings of IEEE/ACM International Conference on Automated Software Engineering"}
+%@STRING{COMPSAC = "Proceedings of IEEE International Computer Software and Applications Conference"}
+%@STRING{CSM     = "Proceedings of IEEE Conference on Software Maintenance"}
+%@STRING{DBTEST  = "Proceedings of ACM International Workshop on Testing Database Systems"}
+%@STRING{ESECFSE = "Proceedings of joint European Software Engineering Conference and ACM International Symposium on the Foundations of Software Engineering"}
+%@STRING{FSE     = "Proceedings of ACM International Symposium on the Foundations of Software Engineering"}
+%@STRING{FSETOOL = "Proceedings of ACM International Symposium on the Foundations of Software Engineering - Tool Demonstrations"}
+%@STRING{ICSE    = "Proceedings of IEEE/ACM International Conference on Software Engineering"}
+%@STRING{ICSESEIP= "Proceedings of ICSE - Software Engineering in Practice track"}
+%@STRING{ICSENIER= "Proceedings of IEEE/ACM ICSE - NIER"}
+%@STRING{ICSM    = "Proceedings of IEEE International Conference on Software Maintenance"}
+%@STRING{ICST    = "Proceedings of IEEE International Conference on Software Testing, Verification and Validation"}
+%@STRING{ISSRE   = "Proceedings of IEEE International Symposium on Software Reliability Engineering"}
+%@STRING{ISSTA   = "Proceedings of ACM International Symposium on Software Testing and Analysis"}
+%@STRING{IWPC    = "Proceedings of International Workshop on Program Comprehension},
+%@STRING{IWPD    = "Proceedings of IEEE International Workshop on Program Debugging"}
+%@STRING{OOPSLA  = "Proceedings of ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications"}
+%@STRING{PLDI    = "Proceedings of ACM Conference on Programming Language Design and Implementation"}
+%@STRING{POPL    = "Proceedings of ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages"}
+%@STRING{SAS     = "Proceedings of International Symposium on Static Analysis"}
+%@STRING{SCAM    = "Proceedings of IEEE International Working Conference on Source Code Analysis and Manipulation"}
+%@STRING{SIGCSE  = "Proceeding of ACM Technical Symposium on Computer Science Education"}
+%@STRING{SOAP    = "Proceeding of ACM SIGPLAN International Workshop on the State Of the Art in Java Program Analysis"}
+%@STRING{TAICPART = "Proceedings of Testing: Academic and Industrial Conference - Practice and Research Techniques"}
+%@STRING{WODA    = "Proceedings of ACM International Workshop on Dynamic Systems Analysis"}
+
+
+@Article{backhouse75apr,
+  author = {R. C. Backhouse and B. A. Carre},
+  title = {Regular Algebra Applied to Path-finding Problems},
+  journal = {Journal of Applied Mathematics\textup{, 19(7):385--394}},
+  year = 1975,
+  month = apr,
+}
+
+
+@Article{king76jul,
+  author = {James C. King},
+  title = {Symbolic Execution and Program Testing},
+  journal = {Communications of the ACM\textup{, 19(7):385--394}},
+  year = 1976,
+  month = Jul,
+}
+
+@article{clarke76sep,
+  author    = {Lori A. Clarke},
+  title     = {A System to Generate Test Data and Symbolically Execute Programs},
+  journal   = {IEEE Trans. on Softw. Eng.},
+  volume    = {2},
+  number    = {3},
+  year      = {1976},
+  month     = sep,
+  pages     = {215--222},
+}
+
+@article{ernst01feb,
+   author = {Michael D. Ernst and Jake Cockrell and William G. Griswold
+	and David Notkin},
+   title = {Dynamically discovering likely program invariants to support
+	program evolution},
+   journal = IEEETSE,
+   volume = {27},
+   number = {2},
+   pages = {99--123},
+   year = {2001},
+}
+
+@inproceedings{orso03jun,
+  author = 	 {Alessandro Orso and James A. Jones and Mary Jean Harrold},
+  title = 	 {Visualization of Program-Execution Data for Deployed Software},
+  booktitle =    {Proc. of ACM Symp. on Software
+  Visualization (SOFTVIS 2003)},
+  pages = 	 {67--76},
+  address = 	 {San Diego, CA, USA},
+  month = 	 {june},
+  year = 	 {2003},
+}
+
+@inproceedings{orso03sep,
+  author =       {Alessandro Orso and Taweesup Apiwattanapong and Mary Jean Harrold},
+  title =        {Leveraging field data for impact analysis and regression testing},
+  booktitle =    {Proc. of 9th European Softw. Eng.
+  Conf. and 10th ACM SIGSOFT Symp. on the Foundations
+  of Softw. Eng.},
+  pages =        {128--137},
+  address =      {Helsinki, Finland},
+  month =        {september},
+  year =         {2003},
+}
+
+@inproceedings{chawla04jul,
+  author =       {Anil Chawla and Alessandro Orso},
+  title =        {A Generic Instrumentation Framework for Collecting Dynamic Information},
+  booktitle =    {Online Proceeding of the ISSTA Workshop on Empirical Research in Software Testing (WERST 2004)},
+  OPTaddress =      {Boston, MA, USA},
+  month =        {July},
+  year =         {2004},
+  note =         {\url{http://www.sce.carleton.ca/squall/WERST2004}}
+}
+
+@inproceedings{apiwattanapong04sep,
+  author = 	 {Taweesup Apiwattanapong and Alessandro Orso and Mary Jean Harrold},
+  title =        {A Differencing Algorithm for Object-oriented Programs},
+  booktitle =    {Proc. of 19th IEEE Int'l Conf. on Autom. Softw. Eng. },
+  pages =        {2--13},
+  OPTaddress =      {Linz, Austria},
+  month = 	 {September},
+  year = 	 {2004},
+}
+
+@inproceedings{orso04nov,
+  author = 	 {Alessandro Orso and Nanjuan Shi and Mary Jean Harrold},
+  title =        {Scaling Regression Testing to Large Software Systems},
+  booktitle =    {Proc. of 12th ACM SIGSOFT Symp. on the Foundations of Softw. Eng. (FSE 2004)},
+  pages =        {241--252},
+  OPTaddress =      {Newport Beach, CA, USA},
+  month = 	 {November},
+  year = 	 {2004},
+}
+
+@article{orso04apr,
+  author =       {Alessandro Orso and Saurabh Sinha and Mary Jean Harrold},
+  title =        {Classifying Data Dependences in the Presence of Pointers for Program Comprehension, Testing, and Debugging},
+  journal = 	 {ACM Trans. on Softw. Eng. and Methodology},
+  volume =       {13},
+  number =       {2},
+  year =         {2004},
+  month =        {April},
+  pages =        {199--239},
+  publisher =    {ACM Press},
+}
+
+@article{jones04sep,
+  author = 	 {James A. Jones and Alessandro Orso and Mary Jean Harrold},
+  title =        {Gammatella: Visualizing Program-Execution Data for Deployed Software},
+  journal =      {Information Visualization},
+  year = 	 {2004},
+  month =        {September},
+  volume =       {3},
+  number = 	 {3},
+  pages = 	 {173--188},
+}
+
+@inproceedings{jones02may,
+ author = {James A. Jones and Mary Jean Harrold and John Stasko},
+ title = {{Visualization of Test Information to Assist Fault Localization}},
+ booktitle = ICSE,
+ year = {2002},
+ month = may,
+ pages = {467--477},
+}
+@inproceedings{jones05nov,
+	Author = {James A. Jones and Mary Jean Harrold},
+	Booktitle = ASE,
+	Title = {Empirical Evaluation of the {Tarantula} Automatic Fault-Localization Technique},	
+	Month = nov,
+	Pages = {273--282},
+	Year = {2005}
+}
+@inproceedings{abreu07sep,
+	Author = {Rui Abreu and Peter Zoeteweij and Arjan J. C. Van Gemund},
+	Title = {On the Accuracy of Spectrum-based Fault Localization},
+	Booktitle = TAICPART,
+	Pages = {89--98},
+	Year = {2007},
+	Month = sep,
+}
+@article{baah10jul,
+ author={Baah, George K. and Podgurski, Andy and Harrold, Mary Jean},
+ title={The Probabilistic Program Dependence Graph and Its Application to Fault Diagnosis},
+ journal=IEEETSE,
+ year={2010},
+ volume={36},
+ number={4},
+ pages={528--545},
+}
+
+
+@inproceedings{apiwattanapong05may,
+  author = 	 {Taweesup Apiwattanapong and Alessandro Orso and Mary Jean Harrold},
+  title =        {Efficient and Precise Dynamic Impact Analysis Using Execute-After Sequences},
+  booktitle =    {Proc. of Int'l Conf. on Softw. Eng.},
+  pages =        {432--441},
+  month = 	 may,
+  year = 	 {2005},
+}
+
+@inproceedings{orso04may,
+  author = 	 {Alessandro Orso and Taweesup Apiwattanapong and James B. Law and Gregg Rothermel and Mary Jean Harrold},
+  title =        {An Empirical Comparison of Dynamic Impact Analysis Algorithms},
+  booktitle =    {Proc. of 26th IEEE and ACM SIGSOFT Int'l Conf. on Softw. Eng. (ICSE 2004)},
+  pages =        {491--500},
+  address =      {Edinburgh, Scotland},
+  month = 	 {may},
+  year = 	 {2004},
+}
+
+@inproceedings{sinha04may,
+  author = 	 {Saurabh Sinha and Alessandro Orso and Mary Jean Harrold},
+  title =        {Automated Support for Development, Maintenance, and Testing in the Presence of Implicit Control Flow},
+  booktitle =    {Proc. of 26th IEEE and ACM SIGSOFT Int'l Conf. on Softw. Eng. (ICSE 2004)},
+  pages =        {336--345},
+  address =      {Edinburgh, Scotland},
+  month = 	 {may},
+  year = 	 {2004},
+}
+
+@inproceedings{orso04dec,
+  author = 	 {Alessandro Orso and Bryan Kennedy},
+  title = 	 {Improving Dynamic Analysis through Partial Replay of Users' Executions},
+  booktitle =    {Online Proc. of Dagstuhl Seminar on Understanding Program Dynamics},
+  editor = 	 {J.D. Choi and B. Ryder and A. Zeller},
+  address =      {Dagstuhl, Germany},
+  month = 	 {december},
+  year = 	 {2003},
+  note = 	 {\url{http://www.dagstuhl.de/03491/Proceedings}},
+}
+
+@TechReport{orso05mar,
+  author = 	 {Alessandro Orso and Bryan Kennedy},
+  title = 	 {Selective Automated Capture and Replay of Execution},
+  institution =  {Georgia Institute of Technology, College of Computing},
+  month = 	 {March},
+  year = 	 {2005},
+  note = 	 {\url{http://www.cc.gatech.edu/~orso/papers/abstracts.html#tr0503}}
+}
+
+@inproceedings{seesing05oct,
+  author =       {A. Seesing and A. Orso},
+  title =        {{InsECTJ: A Generic Instrumentation Framework for Collecting Dynamic Information within Eclipse}},
+  booktitle =    {Proc. of eclipse Technology eXchange (eTX) Workshop at OOPSLA 2005},
+  pages =        {49--53},
+  address =      {San Diego, USA},
+  month =        {october},
+  year =         {2005},
+}
+
+@inproceedings{deng06ase,
+  author    = {Xianghua Deng and
+               Jooyong Lee and
+               Robby},
+  title     = {Bogor/Kiasan: A k-bounded Symbolic Execution for Checking
+               Strong Heap Properties of Open Systems},
+  booktitle = {Proc. of Int'l Conf. on Autom. Software Eng.},
+  year      = {2006},
+  pages     = {157-166},
+}
+
+@inproceedings{martena02dec,
+  author =       {Vincenzo Martena and Alessandro Orso and Mauro Pezz\`e},
+  title =        {Interclass Testing of Object Oriented Software},
+  booktitle =    {Proc. of IEEE Int'l Conf. on
+  Engineering of Complex Computer Systems (ICECCS 2002)},
+  address =      {Greenbelt, MD, USA},
+  pages =        {145--154},
+  month =        {december},
+  year =         {2002},
+}
+
+@inproceedings{bowring02nov,
+  author = 	 {James Bowring and Alessandro Orso and Mary Jean Harrold},
+  title = 	 {Monitoring Deployed Software Using Software Tomography},
+  booktitle =    {Proc. of ACM SIGPLAN-SIGSOFT Workshop on
+  Program Analysis for Software Tools and Engineering (PASTE 2002)},
+  pages = 	 {2--8},
+  OPTaddress =      {Charleston, SC, USA},
+  month = 	 {november},
+  year = 	 {2002},
+}
+
+@inproceedings{orso02oct,
+  author = 	 {Alessandro Orso and Anup Rao and Mary Jean Harrold},
+  title = 	 {A Technique for Dynamic Updating of {J}ava Software},
+  booktitle =    {Proc. of IEEE Int'l Conf. on
+  Software Maintenance (ICSM 2002)},
+  address =      {Montreal, Canada},
+  pages =        {649--658},
+  month = 	 {october},
+  year = 	 {2002},
+}
+
+@inproceedings{orso02jul,
+  author = 	 {Alessandro Orso and Donglin Liang and Mary Jean Harrold and Richard Lipton},
+  title = 	 {Gamma System: Continuous Evolution of Software after Deployment},
+  booktitle =    {Proc. of ACM SIGSOFT Int'l Symp. on Softw. Testing and Analysis (ISSTA 2002)},
+  pages = 	 {65--69},
+  address =      {Rome, Italy},
+  month = 	 {july},
+  year = 	 {2002},
+}
+
+@inproceedings{orso01novbis,
+  title =       {Using Component Metadata to Support the Regression Testing of Component-Based software},
+  author =      {Alessandro Orso and Mary Jean Harrold and Davis S. Rosenblum and Gregg Rothermel and Mary Lou Soffa and Hyunsook Do},
+  booktitle =   {Proc. of IEEE Int'l Conf. on
+  Software Maintenance (ICSM 2001)},
+  pages =       {716--725},
+  address =     {Firenze, Italy},
+  month =       {november},
+  year =        {2001},
+}
+
+@inproceedings{orso01nov,
+  title =       {Incremental Slicing Based on Data-Dependence Types},
+  author =      {Alessandro Orso and Saurabh Sinha and Mary Jean Harrold},
+  booktitle =   {Proc. of IEEE Int'l Conf. on
+  Software Maintenance (ICSM 2001)},
+  pages =       {158--167},
+  address =     {Firenze, Italy},
+  month =       {november},
+  year =        {2001},
+}
+
+@inproceedings{harrold01nov,
+  author = 	 {Mary Jean Harrold and James A. Jones and Tongyu Li and Donglin Liang and Alessandro Orso and Maikel Pennings and Saurabh Sinha and Stephan A. Spoon and Ashish Gujarathi},
+  title = 	 {Regression Test Selection for Java Software},
+  booktitle =    {Proc. of ACM Conf. on Object-Oriented
+  Programming, Systems, Languages, and Applications (OOPSLA 2001)},
+  pages = 	 {312--326},
+  address =      {Tampa Bay, FL, USA},
+  month = 	 {november},
+  year = 	 {2001},
+}
+
+@inproceedings{orso01may,
+  author = 	 {Alessandro Orso and Giovanni Vigna and Mary Jean Harrold},
+  title = 	 {{MASSA}: Mobile Agents Security through Static/Dynamic Analysis},
+  booktitle = 	 {ICSE Workshop on Softw. Eng. and Mobility},
+  address =      {Toronto, Ontario, Canada},
+  month = 	 {may},
+  year = 	 {2001},
+}
+
+@inproceedings{orso01maybis,
+  author = 	 {Alessandro Orso and Saurabh Sinha and Mary Jean Harrold},
+  title = 	 {Effects of Pointers on Data Dependences},
+  booktitle = 	 {Proc. of 9th Int'l Workshop on
+  Program Comprehension (IWPC 2001)},
+  pages =        {39--49},
+  address =      {Toronto, Ontario, Canada},
+  month = 	 {may},
+  year = 	 {2001},
+}
+
+@inproceedings{orso00nov,
+   Author =      {Alessandro Orso and Mary Jean Harrold and David S. Rosenblum},
+   Title =       {Component Metadata for Softw. Eng. Tasks},
+   BookTitle =   {Proc. of 2nd Int'l Workshop on
+   Engineering Distributed Objects (EDO 2000)},
+   series =      {LNCS},
+   volume =      {1999},
+   address=      {Davis, CA, USA},
+   publisher =   {Springer-Verlag},
+   pages =       {129--144},
+   Year =        {2000},
+}
+
+@inproceedings{buy00aug,
+  author =	 {Ugo Buy and Alessandro Orso and Mauro Pezz\'e},
+  title =	 {Automated testing of classes},
+  booktitle =	 {Proc. of ACM SIGSOFT Int'l Symp. on
+  Softw. Testing and Analysis (ISSTA 2000)},
+  address =      {Portland, OR, USA},
+  pages =	 {39-48},
+  month =        {august},
+  year =	 {2000},
+}
+
+@inproceedings{orso99june,
+  author =       {Alessandro Orso and Mauro Pezz\`e},
+  title =        {Integration Testing of Procedural Object-Oriented Languages with Polymorphism},
+  booktitle =    {Proc. of Int'l Conf. on
+  Testing Computer Software: Future Trends in Testing (TCS 1999)},
+  address =      {Washington, D.C., USA},
+  month =        {june},
+  year =         {1999},
+}
+
+@inproceedings{buy99may,
+  author =       {Ugo Buy and Carlo Ghezzi and Alessandro Orso and
+  Mauro Pezz\`e and Matteo Valsasna},
+  title =        {A Framework for Testing Object-Oriented Components},
+  booktitle =    {ICSE Workshop on Testing Distributed Component-Based Systems},
+  pages =        {112--124},
+  address =      {Los Angeles, CA, USA},
+  month =        {may},
+  year =         {1999},
+}
+
+@phdthesis       {orso99feb,
+  author =       {Alessandro Orso},
+  title =        {Integration Testing of Object-Oriented Software },
+  school =       {Politecnico di Milano},
+  address =      {Milan, Italy},
+  month =        {february},
+  year =         {1999},
+}
+
+@inproceedings{orso98apr,
+   author =      {Alessandro Orso and Sergio Silva},
+   title =       {Open Issues and Research Directions in Object Oriented Testing},
+   booktitle =   {Proc. of 4th Int'l Conf. on@inproceedings
+   Achieving Quality in Software: Software Quality in the
+   Communication Society (AQUIS  1998)},
+   address =     {Venice, Italy},
+   month =       {april},
+   year =        {1998},
+}
+
+@inproceedings{baresi97may,
+   author =     {Luciano Baresi and Alessandro Orso and Mauro Pezz\`{e}},
+   title =      {Introducing Formal Specification Methods in Industrial Practice},
+   booktitle =  {Proc. of 19th IEEE and ACM SIGSOFT
+   Int'l Conf. on Softw. Eng. (ICSE 1997},
+   pages =      {56--66},
+   address =    {Boston, MA, USA},
+   month =      {may},
+   year =       {1997},
+}
+
+@inproceedings{baresi95nov,
+   author =     {Luciano Baresi and Alessandro Orso and Mauro Pezz\`{e}},
+   title  =     {Customizable Notations for Kernel Formalisms},
+   booktitle =  {Proc. of 1st IEEE Int'l Conf.
+   on Engineering of Complex Computer Systems (ICECCS 1996)},
+   pages =      {43--46},
+   address =    {Fort Lauderdale, FL, USA},
+   month =      {november},
+   year =       {1995},
+}
+
+@inproceedings{steven00aug,
+ author = {John Steven and Pravir Chandra and Bob Fleck and Andy Podgurski},
+ title = {jRapture: A Capture/Replay Tool for Observation-Based Testing},
+ booktitle = {Proc. of 2000 ACM SIGSOFT Int'l
+                  Symp. on Softw. Testing and Analysis (ISSTA
+                  2000)},
+ year = {2000},
+ month = {August},
+ pages = {158--167},
+ OPTlocation = {Portland, Oregon, United States},
+ OPTpublisher = {ACM Press},
+}
+
+@inproceedings{alpern00,
+ author = {Bowen Alpern and Ton Ngo and Jong-Deok Choi and Manu Sridharan},
+ title = {DejaVu: Deterministic Java Replay Debugger for Jalape\~no
+                  Java Virtual Machine},
+ booktitle = {Proc. of Conf. on Object-Oriented
+                  Programming, Systems, Languages, and Applications
+                  (OOPSLA 2000) -- Addendum},
+ year = {2000},
+ pages = {165--166},
+ OPTlocation = {Minneapolis, Minnesota, United States},
+ OPTpublisher = {ACM Press},
+}
+
+@inproceedings{choi98,
+ author = {J.-D. Choi and H. Srinivasan},
+ title = {Deterministic replay of java multithreaded applications},
+ booktitle = {In Proc. of ACM SIGMETRICS Symp. on
+                  Parallel and Distributed Tools},
+ pages = {48--59},
+ year = {1998}
+}
+
+@article{tai91,
+ author = {K. C. Tai and R. H. Carver and E. E. Obaid},
+ title = {Debugging concurrent ada programs by deterministic execution},
+ journal = {IEEE Trans. on Softw. Eng.},
+ volume = {17},
+ number = {1},
+ pages = {45--63},
+ year = {1991}
+}
+
+@inproceedings{gupta92nov,
+  author =       {R. Gupta and M. J. Harrold and M. L. Soffa},
+  title =        {An Approach to Regression Testing using Slicing},
+  booktitle =    {Proc. of Conf. on Software Maintenance (CSM'92)},
+  address =      {Orlando, Florida},
+  month =        {November},
+  year =         {1992},
+}
+
+@inproceedings{russinovich96,
+ author = {M. Russinovich and B. Cogswell},
+ title = {Replay for concurrent non-deterministic shared-memory applications},
+ booktitle = {Proc. of ACM SIGPLAN Conf. on Prog. Lang. Design and Impl.},
+ pages = {258--266},
+ year = {1996}
+}
+
+@inproceedings{konuru00,
+ author = {R. Konuru and H. Srinivasan and J.-D. Choi},
+ title = {Deterministic replay of distributed java applications},
+ booktitle = {In Proc. of 14th IEEE Int'l Parallel \& Distributed Processing Symp.},
+ pages = {219--228},
+ year = {2000}
+}
+
+@article{weiser84jul,
+  author =       {M. Weiser},
+  title =        {Program Slicing},
+  journal =      {IEEE Trans. on Softw. Eng.\textup{, 10(4):352--357}},
+  month =        Jul,
+  year =         {1984},
+
+}
+
+@INPROCEEDINGS{ball98mar,
+	AUTHOR = "T. Ball",
+	TITLE = "On the limit of control flow analysis for regression test selection",
+	BOOKTITLE = "In ACM Int'l Symp. on Softw. Testing and Analysis",
+	PAGES = "134-142",
+	MONTH = "March",
+	YEAR = "1998"
+}
+
+@INPROCEEDINGS{chen94may,
+	AUTHOR = "Y. F. Chen and D. S. Rosenblum and K. P. Vo",
+	TITLE = "TestTube: A system for selective regression testing",
+	BOOKTITLE = "Proc. of Int'l Conf. on Softw. Eng.",
+	PAGES = "211-222",
+	MONTH = "May",
+	YEAR = "1994"
+}
+
+@INPROCEEDINGS{leung91oct,
+	AUTHOR = "H. K. N. Leung and L. J. White",
+	TITLE = "A cost model to compare regression test strategies",
+	BOOKTITLE = "Proc. of Conf. on Software Maintenance '91",
+	PAGES = "201-208",
+	MONTH = "October",
+	YEAR = "1991"	
+}
+
+@ARTICLE{rothermel97apr,
+  author = {Rothermel, G. and Harrold, M. J.},
+  title = {{A safe, efficient regression test selection technique}},
+  journal = {ACM Trans. on Softw. Eng. and Methodology},
+  volume = 6,
+  number = 2,
+  month = Apr,
+  year = 1997,
+  pages = {173--210},
+}
+
+@INPROCEEDINGS{vokolos97may,
+	AUTHOR = "F. Vokolos and P. Frankl",
+	TITLE = "Pythia:  A regression test selection tool based on text differencing",
+	BOOKTITLE = {{IFIP TC5 WG5.4 3rd internatinal Conf. on on Reliability, quality and safety of software-intensive systems}},
+	pages = "3-21",
+	MONTH = "May",
+	YEAR = "1997"	
+}
+	
+@INPROCEEDINGS{hsia97jul,
+	AUTHOR = {P. Hsia and D. Kung and C. T. Hsu and L. Li and Y. Toyashima and C. Chen},
+	TITLE = {A technique for the selective revalidation of {OO} software},
+	BOOKTITLE = {{Software Maintenance: Research and Practice}},
+	VOLUME = {9},
+	PAGES = {217--233},
+	YEAR = {1997},
+	month = {July-August},
+}
+
+@ARTICLE{kung94,
+	AUTHOR = "D. Kung and J. Gao and P. Hsia and Y. Toyashima and C. Chen",
+	TITLE = "Firewall regression testing and software maintenance of object-oriented systems",
+	JOURNAL = "Journal of Object-Oriented Programming",
+	YEAR = "1994"	
+}
+	
+@ARTICLE{rothermel00jun,
+	AUTHOR = "G. Rothermel and M. J. Harrold and J. Dedhia",
+	TITLE = {{Regression test selection for {C}++ software}},
+	journal = {{Journal of Software Testing, Verif., and Reliability}},
+	VOLUME = "10",
+	NUMBER = "6",
+	PAGES = "77--109",
+	MONTH = "June",
+	YEAR = "2000"	
+}
+	
+@INPROCEEDINGS{greg96aug,
+	AUTHOR = "G. Rothermel and M. J. Harrold and J. Dedhia",
+	TITLE = "Analyzing regression test selection techniques",
+	BOOKTITLE = "IEEE Trans. on Softw. Eng.",
+	VOLUME = "22",
+	NUMBER = "8",
+	PAGES = "529--551",
+	MONTH = "August",
+	YEAR = "1996"	
+}	
+
+@Misc{gamma,
+  key = 	 {gamma},
+  OPTauthor = 	 {},
+  title = 	 {{The GAMMA Project}},
+  howpublished = {\url{http://gamma.cc.gatech.edu/}},
+  OPTmonth = 	 {},
+  OPTyear = 	 {},
+  note = 	 {Georgia Institute of Technology},
+  OPTannote = 	 {}
+}
+
+@Book{JVMspec,
+  author = 	 {Tim Lindholm and Frank Yellin},
+  title = 	 {The Java Virtual Machine Specification (2nd Edition)},
+  publisher = 	 {Addison-Wesley Pub Co},
+  year = 	 {1999},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  OPTaddress = 	 {},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@inproceedings{saff04jun,
+   author = {David Saff and Michael D. Ernst},
+   title = {Automatic mock object creation for test factoring},
+   booktitle = {ACM SIGPLAN/SIGSOFT Workshop on Program Analysis for
+        Software Tools and Engineering (PASTE'04)},
+   pages = {49--51},
+   address = {Washington, DC, USA},
+   month = {June~7--8,},
+   year = {2004}
+}
+
+@article{zeller02feb,
+ author = {Andreas Zeller and Ralf Hildebrandt},
+ title = {Simplifying and Isolating Failure-Inducing Input},
+ journal = {{IEEE Trans. on Softw. Eng.}},
+ volume = {28},
+ number = {2},
+ year = {2002},
+ month = {February},
+ issn = {0098-5589},
+ pages = {183--200},
+ doi = {http://dx.doi.org/10.1109/32.988498},
+ publisher = {IEEE Press},
+}
+
+@article{rapps85apr,
+author = {Rapps, S. and Weyuker, E. J.},
+title = {{Selecting software test data using data flow information}},
+journal = IEEESE,
+volume = {11},
+number = 4,
+month = apr,
+year = 1985,
+pages = {367--375}
+}
+
+@article{frankl88oct,
+author = {Frankl, P. and Weyuker, E. J.},
+title = {An Applicable Family of Data Flow Criteria},
+journal = {{IEEE Trans. on Softw. Eng.\textup{, 14(10):1483-1498}}},
+month = Oct,
+year = {1988},
+}
+
+@article{laski83may,
+author = {Laski, J. W. and Korel, B.},
+title = {A data flow oriented program testing strategy},
+journal = {IEEE Trans. on Softw. Eng.\textup{, 9(3):347--354}},
+month = may,
+year = 1983
+}
+
+@article{gupta96jun,
+author = {Gupta, R. and Harrold, M.J. and Soffa, M.L.},
+title = {Program Slicing-Based Regression Testing Techniques},
+journal = {Journal of Softw. Testing, Verif., and Reliability\textup{, 6(2):83--111}},
+year = {1996},
+month = Jun
+}
+
+@INPROCEEDINGS{rothermel94aug,
+author = {Rothermel, G. and Harrold, M. J.},
+title = {{Selecting tests and identifying test coverage requirements for modified software}},
+booktitle = {{Proc. of Int'l Symp. on Softw. Testing and Analysis}},
+pages = {169-184},
+month = Aug,
+year = 1994,
+}
+
+@inproceedings{wong95apr,
+author = {W. E. Wong and J. R. Horgan and S. London and A. P. Mathur},
+title = {Effect of test set minimization on fault detection effectiveness},
+booktitle = {{Proc. of Int'l Conf. on Softw. Eng.}},
+pages = {41--50},
+month = Apr,
+year = 1995,
+}
+@article{debroy13aug,
+ author = {Debroy, Vidroha and Wong, W. Eric},
+ title = {A Consensus-Based Strategy to Improve the Quality of Fault Localization},
+ journal = {Software: Practice and Experience},
+ year = {2013},
+ volume = {43},
+ number = {8},
+ pages = {989--1011},
+}
+
+@inproceedings{tallam05sep,
+author = {S. Tallam and N. Gupta},
+title = {A Concept Analysis Inspired Greedy Algorithm for Test Suite Minimization},
+booktitle = {ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering},
+month = {September},
+year = 2005,
+pages = {35--42},
+}
+
+@inproceedings{duesterwald92mar,
+author = {Duesterwald, E. and Gupta, R. and Soffa, M. L.},
+title = {{Rigorous data flow testing through output influences.}},
+booktitle = {{Second Irvine Software Symp. }},
+month = {{March}},
+year = {1992},
+pages = {131--145}
+}
+
+@ARTICLE{ferrante87jul,
+author = {Ferrante, J. and Ottenstein, K.J. and Warren, J.D.},
+title = {{The program dependence graph and its use in optimization}},
+journal = {{ACM Trans. on Prog. Lang. and Systems\textup{, 9(3):319-349}}},
+publisher = {{ACM Press}},
+address = {New York, NY},
+month = jul,
+year = 1987,
+}
+
+@INPROCEEDINGS{richardson88jul,
+author = {Richardson, D. and Thompson, M. C.},
+title = {{The RELAY model of error detection and its application}},
+booktitle = {{Proc. of Workshop on Softw. Testing, Analysis and Verif.}},
+pages = {223--230},
+month = Jul,
+year = 1988
+}
+
+@inproceedings{harder03may,
+  author = {Michael Harder and Jeff Mallen and Michael D. Ernst},
+  title = {{Improving test suites via operational abstraction}},
+  booktitle = {{Proc. of 25th IEEE and ACM SIGSOFT Int'l Conf. on Softw. Eng. (ICSE 2003)}},
+  pages = {60--71},
+  month = may,
+  year = {2003}
+}
+
+@inproceedings{pacheco05jul,
+  author = {Carlos Pacheco and Michael D. Ernst},
+  title = {{Eclat: Automatic generation and classification of test inputs}},
+  booktitle = {{Proc. of 19th European Conf. on Object-Oriented Programming (ECOOP 2005)}},
+  pages = {504--527},
+  month = jul,
+  year = {2005}
+}
+
+@inproceedings{bowring04jul,
+  author = 	 {James F. Bowring and James M. Rehg and Mary Jean Harrold},
+  title = 	 {Active Learning for Automatic Classification of Software Behavior},
+  booktitle =    {Proc. of ACM SIGSOFT Int'l Symp. on Softw. Testing and Analysis (ISSTA 2004)},
+  pages = 	 {195--205},
+  OPTaddress =  {Boston, MA, USA},
+  month = 	 jul,
+  year = 	 {2004},
+}
+
+@article{binkley97aug,
+author = {David Binkley},
+title = {{Semantics guided regression test cost reduction}},
+journal = {{IEEE Trans. on Softw. Eng.\textup{, 23(8):498--516}}},
+month = Aug,
+year = {1997},
+}
+
+@article{horwitz90jan,
+author = {Susan Horwitz and Thomas Reps and David Binkley},
+title = {{Interprocedural slicing using dependence graphs}},
+journal = {ACM Trans. on Prog. Lang. and Systems\textup{, 12(1):26-60}},
+month = Jan,
+year = 1990,
+}
+
+@article{morell90aug,
+author = {Larry Morell},
+title = {{A Theory of Fault-Based Testing}},
+journal = {{IEEE Trans. on Softw. Eng.\textup{, 16(8):844-857}}},
+month = Aug,
+year = {1990},
+}
+
+@article{ntafos84nov,
+    author = {S. C. Ntafos},
+    title = {{On required element testing}},
+    journal = {{IEEE Trans. on Softw. Eng.\textup{, 10(6):795--803}}},
+    month = Nov,
+    year = {1984}
+}
+
+@article{csallner04sep,
+   author = {Christoph Csallner and Yannis Smaragdakis},
+   title = {{JCrasher}: An automatic robustness tester for {Java}},
+   journal = {Software---Practice \& Experience},
+   volume = {34},
+   number = {11},
+   pages = {1025--1050},
+   month = {{September}},
+   year = {2004}
+}
+
+@article{cheatham79jul,
+ author = {T. E. Cheatham and G. H. Holloway and J. A. Townley},
+ title = {Symbolic Evaluation and the Analysis of Programs},
+ journal = {IEEE Trans. Softw. Eng.},
+ volume = {5},
+ number = {4},
+ year = {1979},
+ issn = {0098-5589},
+ pages = {402--417},
+ doi = {http://dx.doi.org/10.1109/TSE.1979.234207},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+}
+
+@article{sagiv02may,
+ author = {Sagiv,, Mooly and Reps,, Thomas and Wilhelm,, Reinhard},
+ title = {Parametric shape analysis via 3-valued logic},
+ journal = {ACM Trans. Prog. Lang. Syst.},
+ volume = {24},
+ number = {3},
+ year = {2002},
+ pages = {217--298},
+ }
+
+
+@inproceedings{ball01jun,
+ author = {Ball,, Thomas and Majumdar,, Rupak and Millstein,, Todd and Rajamani,, Sriram K.},
+ title = {Automatic predicate abstraction of {C} programs},
+ booktitle = {Proc. of ACM SIGPLAN Conf. on Prog. Lang. Design and Impl.},
+ year = {2001},
+ month = jun,
+ }
+
+
+@inproceedings{khurshid03apr,
+  author = {S. Khurshid and C. P\v{a}s\v{a}reanu and W. Visser},
+  title = {Generalized symbolic execution for model checking and testing},
+  booktitle = {Proc. of Ninth Int'l Conf. on Tools and Algorithms for the Construction and Analysis of Systems (TACAS)},
+  month = {{April}},
+  year = 2003,
+}
+
+@article{visser03apr,
+ author = {Visser,, Willem and Havelund,, Klaus and Brat,, Guillaume and Park,, Seungjoon and Lerda,, Flavio},
+ title = {Model Checking Programs},
+ journal = {Automated Software Eng.},
+ volume = {10},
+ number = {2},
+ year = {2003},
+ pages = {203--232},
+ }
+
+
+@article{korel96jan,
+ author = {Roger Ferguson and Bogdan Korel},
+ title = {The chaining approach for software test data generation},
+ journal = {ACM Trans. Softw. Eng. Method.},
+ volume = {5},
+ number = {1},
+ year = {1996},
+ pages = {63--86},
+ }
+
+@INPROCEEDINGS{xie05apr,
+    author = {Tao Xie and Darko Marinov and Wolfram Schulte and David Notkin},
+    title = {Symstra: A Framework for Generating Object-Oriented Unit Tests using Symbolic Execution},
+    booktitle = {Proc. of 11th Int'l Conf. on Tools and Algorithms for the Construction and Analysis of Systems},
+    year = {2005},
+    pages = {365--381},
+    month = {April},
+}
+
+@inproceedings{godefroid05jun,
+ author = {Godefroid,, Patrice and Klarlund,, Nils and Sen,, Koushik},
+ title = {{DART}: {D}irected automated random testing},
+ booktitle = {Proc. of ACM SIGPLAN Conf. on Prog. Lang. Design and Impl.},
+ year = {2005},
+ month = jun,
+ }
+
+@inproceedings{sen05sep,
+  author = {Koushik Sen and Darko Marinov and Gul Agha},
+  title = {{CUTE}: A Concolic Unit Testing Engine for {C}},
+  booktitle = {Proc. of ESEC / Int'l Symp. on Found. of Softw. Eng.},
+  pages =  "263--272",
+  year =  2005,
+  month = Sep,
+}
+
+@inproceedings{yorsh06jul,
+ author = {Yorsh,, Greta and Ball,, Thomas and Sagiv,, Mooly},
+ title = {Testing, abstraction, theorem proving: better together!},
+ booktitle = {Proc. of Int'l Symposium on Softw. Testing and Analysis},
+ year = {2006},
+ month = jul,
+ pages = {145--156}
+ }
+
+
+@inproceedings{godefroid07jan,
+ author = {Patrice Godefroid},
+ title = {Compositional Dynamic Test Generation},
+ booktitle = {Proc. of Symp. on Principles of Prog. Lang.},
+ year = {2007},
+ month = jan,
+ pages = {47--54},
+ }
+@inproceedings{anand08mar,
+	author = {Anand, Saswat   and Godefroid, Patrice   and Tillmann, Nikolai  },
+	title = {Demand-Driven Compositional Symbolic Execution},
+	booktitle = {Proc. of Tools and Alg. for the Constr. and Analysis of Systems},
+	pages = {367--381},
+	year = {2008},
+	month = mar,
+}
+
+@article{clarke85feb,
+  author    = {Lori A. Clarke and Debra J. Richardson},
+  title     = {Applications of symbolic evaluation.},
+  journal   = {J. of Systems and Software},
+  volume    = {5},
+  number    = {1},
+  year      = {1985},
+  month     = feb,
+  pages     = {15--35},
+}
+
+@Article{apiwattanapong06oct,
+  author = 	 {Taweesup Apiwattanapong and Alessandro Orso and Mary Jean Harrold},
+  title = 	 {J{D}iff: A Differencing Technique and Tool for Object-Oriented Programs},
+  journal = 	 {Journal of Automated Softw. Eng.},
+  year = 	 2006,
+  volume =	 13,
+  number =	 4,
+  month =	 {October}
+}
+
+@inproceedings{srivastava02jul,
+  author = {Amitabh Srivastava and Jay Thiagarajan},
+  title = {Effectively prioritizing tests in development environment},
+  booktitle = {Proc. of Int'l Symp. on Softw. Testing and Analysis},
+  pages =  {97--106},
+  year =  2002,
+  month = Jul,
+}
+
+@INPROCEEDINGS{bates93jan,
+author = {Bates, S. and Horwitz, S.},
+title = {{Incremental program testing using program dependence graphs}},
+booktitle = {{Proc. of Symp. on Principles of Prog. Lang.}},
+pages = {384-396},
+month = Jan,
+year = 1993,
+}
+
+@INPROCEEDINGS{leung89oct,
+author = {Leung, H. K. N. and White, L. J.},
+title = {{Insights into regression testing}},
+booktitle = {{Proc. of Conf. on Software Maintenance - 1989}},
+pages = {60-69},
+month = oct,
+year = 1989
+}
+
+@book{clarke00jan,
+	author = {Clarke, Edmund  M.  and Grumberg, Orna   and Peled, Doron  A. },
+	isbn = {0262032708},
+	month = {January},
+	publisher = {{The MIT Press}},
+	title = {Model Checking},
+	year = {2000}
+}
+
+@article{demillo91sep,
+	author = {DeMillo, R. A.  and Offutt, A. J. },
+	journal = {IEEE Trans. on Softw. Eng.},
+	number = {9},
+	pages = {900--910},
+	title = {Constraint-based automatic test data generation},
+	volume = {17},
+	year = {1991},
+	month = {September}
+}
+
+@article{voas92aug,
+	author = {J.M. Voas},
+	journal = {IEEE Trans. on Softw. Eng.},
+	title = {{PIE}: A Dynamic Failure-Based Technique},
+	volume = {18},
+	number = {8},
+	pages = {717--727},
+	year = {1992},
+	month = Aug,
+	comment = "Only for OUTPUT. `To date, we have only perturbed numeric data state values; perturbing nonnumeric data state values is an area of future research'... SA ranks program locations based on their ability to impact the program’s computation. Eval: perturbation function producing a uniformly selected value in the interval [0.5x, 1.5x] for LHS value, 100 program inputs",\textup{, 18(8):717--727}
+}
+@techreport{voas91nasa,
+ author = {Jeffrey M., Voas and Keith W., Miller and J., Payne},
+ title = {{PISCES}: A Tool for Predicting Software Testability},
+ year = {1991},
+ source = {\url{http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3ALTRS%3ANASA-92-aqsdt.jmv}},
+ publisher = {NASA Langley Technical Report Server},
+}
+@article{voas91mar,
+ author={Voas, J. and Morell, L. and Miller, K.},
+ title={Predicting where faults can hide from testing},
+ journal={Software, IEEE},
+ year={1991},
+ volume={8},
+ number={2},
+ pages={41--48},
+ comment = "(perturbation:) we now use a uniform distribution whose mean is the original value",
+}
+
+@article{harrold93jul,
+author = {Harrold, M. J. and Gupta, R. and Soffa, M. L. },
+title = {A methodology for controlling the size of a test suite},
+journal = {ACM Trans. on Softw. Eng. and Methodology\textup{, 2(3):270--285}},
+month = jul,
+year = 1993
+}
+
+@INPROCEEDINGS{rothermel98nov,
+author = {Rothermel, G. and Harrold, M. J. and Ostrin, J. and Hong, C.},
+title = {An empirical study of the effects of minimization on the fault-detection capabilities of test suites},
+booktitle = {Proc. of Int'l Conf. on Software Maintenance},
+month = {November},
+year = {1998},
+pages = {34--43},
+}
+
+@article{rothermel01oct,
+	author = {G. Rothermel and R.H. Untch and C. Chu and M.J. Harrold},
+	journal = {IEEE Trans. on Softw. Eng.\textup{, 27(10):929--948}},
+	title = {{Test Case Prioritization}},
+	year = {2001},
+	month = Oct,
+}
+
+@inproceedings{hutchins94,
+  author = {Monica Hutchins and Herb Foster and Tarak Goradia and Thomas Ostrand},
+  title = {Experiments of the effectiveness of dataflow- and controlflow-based test adequacy criteria},
+  booktitle = {Proc. of Int'l Conf. on Softw. Eng. (ICSE 94)},
+ year = {1994},
+ pages = {191--200}
+}
+
+@inproceedings{apiwattanapong06aug,
+     author = {Taweesup Apiwattanapong
+                and Raul Santelices
+                and Pavan Kumar Chittimalli
+                and Alessandro Orso
+                and Mary Jean Harrold},
+      title = {MaTRIX:  Maintenance-oriented Testing Requirement Identifier and Examiner},
+  booktitle = {Proc. of Testing and Academic Industrial Conf. Practice and Research Techniques},
+      pages = {137--146},
+      month = aug,
+       year = 2006,
+}
+
+@article { howden75may,
+  author = 		{Howden, W. E.},
+  title =		{Methodology for The Generation of Program Test Data},
+  journal =		{IEEE Trans. on Computers},
+  volume = 	24,
+  pages = 		{554--560},
+  month = 		{May},
+  year =		1975
+}
+
+@inproceedings{visser04mar,
+ author = {Willem Visser and Corina S. P\v{a}s\v{a}reanu and Sarfraz Khurshid},
+ title = {Test input generation with java PathFinder},
+ booktitle = {Proc. of TACAS 2004. SIGSOFT Softw. Eng. Notes},
+ pages = {97--107},
+ month = Mar,
+ year = {2004},
+ notes = {}
+}
+
+@inproceedings{cousot77jan,
+ author = {Patrick Cousot and Radhia Cousot},
+ title = {Abstract interpretation: {A} unified lattice model for static analysis of programs by construction or approximation of fixpoints},
+ booktitle = {Proc. of Symp. on Principles of Prog. Lang.},
+ year = {1977},
+ month = jan,
+ pages = {238--252},
+ }
+
+@inproceedings{flanagan01mar,
+ author = {Flanagan,, Cormac and Leino,, K. Rustan M.},
+ title = {Houdini, an Annotation Assistant for {ESC}/{J}ava},
+ booktitle = {Proc. of Int'l Symp. of Formal Methods Europe on Formal Methods for Increasing Softw. Productivity},
+ year = {2001},
+ month = mar,
+ pages = {500--517},
+ comment = { (From a quick read) Houdini uses heuristics to propose simple invariants for typical situations. },
+ }
+
+@article{sinha01apr,
+ author = {Saurabh Sinha and Mary Jean Harrold and Gregg Rothermel},
+ title = {Interprocedural control dependence},
+ journal = {ACM Trans. Softw. Eng. Method.},
+ volume = {10},
+ number = {2},
+ year = {2001},
+ issn = {1049-331X},
+ pages = {209--254},
+ doi = {http://doi.acm.org/10.1145/367008.367022},
+ publisher = {ACM Press},
+ address = {New York, NY, USA},
+ comment = {Uses syntactic dependence that approximates the "semantic"
+   dependence (often non-computable) defined by Pogdurski and Clarke. In that
+   sense, identifies three special effects: entry-dependence (stmts in callee
+   depend on predicate on which call-site depends), multiple-context (the
+   number of times the dependee is called depends on a predicate), and return-
+   dependence (due to halts and exceptions in callees).
+   Defines two approaches to interproc ctrl dep computation. The first
+   consists on inlined graphs (IIFGs), which can be infinite if there is
+   recursion, and hence impractical. Each node in an IIFG corresponding to a
+   same stmt represents a unique context. A node n1 is control dependent on
+   another node n2 only if the calling context is control dependent on a call
+   site that is itself con.
+   The second approach is context-independent, called statement-dependent.
+   It is more imprecise, but efficient. Dependence among only two IIFG nodes
+   (contextual stmts) is enough to deem the stmts a dependent.
+   In the end, there is a choice of how many times to unroll (inline)
+   procedures to increase dependence precision while controlling cost.
+   },
+ }
+
+@inproceedings{santelices08sep,
+	Author = {Raul Santelices
+                and Pavan Kumar Chittimalli
+                and Taweesup Apiwattanapong
+                and Alessandro Orso
+                and Mary Jean Harrold},
+	Booktitle = {Proc. of Int'l Conf. on Autom. Softw. Eng.},
+	Month = sep,
+	Pages = {218--227},
+	Title = {Test-suite Augmentation for Evolving Software},
+	Year = {2008}
+}
+
+@inproceedings{gulavani06nov,
+ author = {Gulavani,, Bhargav S. and Henzinger,, Thomas A. and Kannan,, Yamini and Nori,, Aditya V. and Rajamani,, Sriram K.},
+ title = {SYNERGY: {A} new algorithm for property checking},
+ booktitle = {Proc. of Int'l Symp. on Foundations of Softw. Eng.},
+ year = {2006},
+ isbn = {1-59593-468-5},
+ pages = {117--127},
+ }
+
+@inproceedings{beckman08jul,
+ author = {Beckman,, Nels E. and Nori,, Aditya V. and Rajamani,, Sriram K. and Simmons,, Robert J.},
+ title = {Proofs from tests},
+ booktitle = {Proc. of Int'l Symp. on Softw. Testing and Analysis},
+ year = {2008},
+ isbn = {978-1-60558-050-0},
+ pages = {3--14},
+ month = jul,
+ }
+
+@inproceedings{csallner08may,
+ author = {Christoph Csallner and Nikolai Tillmann and Yannis Smaragdakis},
+ title = {{D}y{S}y: Dynamic Symbolic Execution for Invariant Inference},
+ booktitle = {Proc. of Int'l Conf. on Softw. Eng.},
+ year = {2008},
+ month = may,
+ page = {281--290}
+ }
+
+@inproceedings{tomb07jul,
+ author = {Tomb,, Aaron and Brat,, Guillaume and Visser,, Willem},
+ title = {Variably interprocedural program analysis for runtime error detection},
+ booktitle = {Proc. of 20th Int'l Symp. on Softw. Testing and Analysis},
+ year = {2007},
+ isbn = {978-1-59593-734-6},
+ pages = {97--107},
+ }
+
+@article{clarke03sep,
+ author = {Clarke,, Edmund M and Grumberg,, Orna and Jha,, Somesh and Lu,, Yuan and Veith,, Helmut},
+ title = {Counterexample-guided abstraction refinement for symbolic model checking},
+ journal = {Journal of the ACM},
+ volume = {50},
+ number = {5},
+ year = {2003},
+ issn = {0004-5411},
+ pages = {752--794},
+ doi = {http://doi.acm.org/10.1145/876638.876643},
+ }
+
+@inproceedings{person08nov,
+ author = {Person,, Suzette and Dwyer,, Matthew B. and Elbaum,, Sebastian and P\v{a}s\v{a}reanu,, Corina S.},
+ title = {Differential symbolic execution},
+ booktitle = {Proc. of Int'l Symp. on Foundations of Softw. Eng.},
+ year = {2008},
+ month = nov,
+ pages = {226--237},
+ }
+
+@inproceedings{xie09jun,
+    author = {Tao Xie and Nikolai Tillmann and Peli de Halleux and Wolfram Schulte},
+    title = {Fitness-Guided Path Exploration in Dynamic Symbolic Execution},
+    booktitle = {Proc. of IEEE/IFIP Int'l Conf. on Depend. Syst. and Networks},
+    month = jun,
+    year = {2009},
+}
+
+@inproceedings{corbett00may,
+ author = {Corbett, James C. and Dwyer, Matthew B. and Hatcliff, John and Laubach, Shawn and P\u{a}s\u{a}reanu, Corina S. and Robby, { } and Zheng, Hongjun},
+ title = {Bandera: extracting finite-state models from Java source code},
+ booktitle = {Proc. of Int'l Conf. on Softw. Eng.},
+ year = {2000},
+ month = may,
+ pages = {439--448},
+ }
+
+@article{beyer07oct,
+ author = {Beyer, Dirk and Henzinger, Thomas A. and Jhala, Ranjit and Majumdar, Rupak},
+ title = {The software model checker {Blast}: Applications to software engineering},
+ journal = {Int. J. Softw. Tools Technol. Transf.},
+ volume = {9},
+ number = {5},
+ year = {2007},
+ month = oct,
+ pages = {505--525},
+}
+
+@inproceedings{babic08may,
+ author = {Babic, Domagoj and Hu, Alan J.},
+ title = {Calysto: scalable and precise extended static checking},
+ booktitle = {Proc. of Int'l Conf. on Softw. Eng.},
+ year = {2008},
+ pages = {211--220},
+ }
+
+@inproceedings{jhala05jun,
+ author = {Jhala, Ranjit and Majumdar, Rupak},
+ title = {Path Slicing},
+ booktitle = {Proc. of ACM SIGPLAN Conf. on Prog. Lang. Design and Impl.},
+ year = {2005},
+ month = jun,
+ pages = {38--47},
+}
+
+@inproceedings{engler07jul,
+ author = {Engler, Dawson and Dunbar, Daniel},
+ title = {Under-constrained execution: making automatic code destruction easy and scalable},
+ booktitle = {Proc. of Int'l Symp. on Softw. Testing and Analysis},
+ year = {2007},
+ month = jul,
+ pages = {1--4},
+ }
+
+@inproceedings{bryant02jul,
+    author = {Randal E. Bryant and Shuvendu K. Lahiri and Sanjit A. Seshia},
+    title = {Modeling and Verifying Systems using a Logic of Counter Arithmetic with Lambda Expressions and Uninterpreted Functions},
+    booktitle = {CAV 02},
+    year = {2002},
+    month = jul,
+    pages = {78--92},
+}
+
+@article{currie06feb,
+ author = {Currie, David and Feng, Xiushan and Fujita, Masahiro and Hu, Alan J. and Kwan, Mark and Rajan, Sreeranga},
+ title = {Embedded software verification using symbolic execution and uninterpreted functions},
+ journal = {Int. J. Parallel Progr.},
+ volume = {34},
+ number = {1},
+ year = {2006},
+ pages = {61--91},
+ }
+
+@article{siegel08apr,
+ author = {Siegel, Stephen F. and Mironova, Anastasia and Avrunin, George S. and Clarke, Lori A.},
+ title = {Combining symbolic execution with model checking to verify parallel numerical programs},
+ journal = {ACM Trans. Softw. Eng. Method.},
+ volume = {17},
+ number = {2},
+ year = {2008},
+ month = apr,
+ pages = {1--34},
+ }
+
+@inproceedings{fischer05sep,
+ author = {Fischer, Jeffrey and Jhala, Ranjit and Majumdar, Rupak},
+ title = {Joining dataflow with predicates},
+ booktitle = {Proc. of ESEC / Int'l Symp. on Found. of Softw. Eng.},
+ year = {2005},
+ month = sep,
+ pages = {227--236},
+ comment = {General data-flow framework is formally defined; harder to parse, but good to study.
+            Data-flow lattice is refined with predicates, in particular, a symbolic execution lattice.
+            Uses ``standard techniques'' [17](Abs. from proofs POPL 04) to find new predicates.
+            If verification/refutation fails, it determines whether the imprecision is due to
+            (1) having followed an infeasible path (finding new predicates that enrich PC and make it infeasible)
+            or (2) a join produces a result leading to imprecision, for which predicates are separated.
+            Too complex to parse: needs careful analysis to figure out how symbolic expressions are joined.
+            (Hypothesis to check: at the end of 4.1, it seems that the order e1 <= e2 btw two abs lattice elems,
+             requires that, for all predicates p, the set s1 of concrete states that sat p in e1 is
+             a subset of s2 for e2. Given this, the join is just the union of the corresponding sets.)
+   },
+ }
+
+@inproceedings{beyer07jul,
+    author = {Beyer, Dirk and Henzinger, Thomas A. and Th\'{e}oduloz, Gr\'{e}gory},
+    booktitle = {Proc. of Int'l Conf. on Comp. Aided Verif.},
+    pages = {504--518},
+    title = {Configurable software verification: Concretizing the convergence of model checking and program analysis},
+    year = {2007},
+    month = jul,
+}
+
+@inproceedings{beyer08sep,
+ author = {Beyer,, Dirk and Henzinger,, Thomas and Theoduloz,, Gregory},
+ title = {Program Analysis with Dynamic Precision Adjustment},
+ booktitle = {Proc. of Int'l Conf. on Autom. Softw. Eng.},
+ year = {2008},
+ month = sep,
+ }
+
+@inproceedings{taghdiri06nov,
+ author = {Taghdiri, Mana and Seater, Robert and Jackson, Daniel},
+ title = {Lightweight extraction of syntactic specifications},
+ booktitle = {Proc. of Int'l Symp. on Foundations of Softw. Eng.},
+ year = {2006},
+ pages = {276--286},
+ }
+
+@inproceedings{chandra09jun,
+ author = {Chandra, Satish and Fink, Stephen J. and Sridharan, Manu},
+ title = {Snugglebug: a powerful approach to weakest preconditions},
+ booktitle = {Proc. of ACM SIGPLAN Conf. on Prog. Lang. Design and Impl.},
+ year = {2009},
+ month = jun,
+ pages = {363--374},
+ }
+
+@inproceedings{weise94jan,
+   author = {Daniel Weise and Roger F. Crew and Michael D. Ernst and Bjarne Steensgaard},
+   title = {Value dependence graphs: Representation without taxation},
+   booktitle = {Proc. of Symp. on Principles of Prog. Lang.},
+   pages = {297--310},
+   month = jan,
+   year = {1994},
+}
+
+@inproceedings{chandra09jun,
+ author = {Chandra, Satish and Fink, Stephen J. and Sridharan, Manu},
+ title = {Snugglebug: a powerful approach to weakest preconditions},
+ booktitle = {Proc. of ACM SIGPLAN Conf. on Prog. Lang. Design and Impl.},
+ year = {2009},
+ month = jun,
+ pages = {363--374},
+ }
+@inproceedings{nanda09may,
+ author = {Nanda, Mangala Gowri and Sinha, Saurabh},
+ title = {Accurate Interprocedural Null-Dereference Analysis for {J}ava},
+ booktitle = {Proc. of Int'l Conf. on Softw. Eng.},
+ year = {2009},
+ month = may,
+ pages = {133--143},
+ }
+
+@inproceedings{flanagan01jan,
+ author = {Flanagan, Cormac and Saxe, James B.},
+ title = {Avoiding exponential explosion: generating compact verification conditions},
+ booktitle = {Proc. of Symp. on Principles of Prog. Lang.},
+ year = {2001},
+ month = jan,
+ pages = {193--205},
+ }
+@inproceedings{barnett05sep,
+ author = {Barnett, Mike and Leino, K. Rustan M.},
+ title = {Weakest-precondition of unstructured programs},
+ booktitle = {PASTE '05: Proc. of the 6th ACM SIGPLAN-SIGSOFT workshop on Program analysis for software tools and engineering},
+ year = {2005},
+ month = sep,
+ pages = {82--87},
+}
+
+@article{cytron91oct,
+ author = {Cytron, Ron and Ferrante, Jeanne and Rosen, Barry K. and Wegman, Mark N. and Zadeck, F. Kenneth},
+ title = {Efficiently computing static single assignment form and the control dependence graph},
+ journal = {ACM Trans. Prog. Lang. Syst.},
+ volume = {13},
+ number = {4},
+ year = {1991},
+ pages = {451--490},
+ }
+
+@Book{dijkstra76oct,
+  author = 	 {Edsger W. Dijkstra},
+  title = 	 {A Discipline of Programming},
+  publisher = 	 {Prentice Hall, Englewood Cliffs, NJ},
+  year = 	 {1976},
+  month = oct,
+}
+
+@article{snelting06oct,
+ author = {Snelting, Gregor and Robschink, Torsten and Krinke, Jens},
+ title = {Efficient path conditions in dependence graphs for software safety analysis},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ volume = {15},
+ number = {4},
+ year = {2006},
+ month = oct,
+ pages = {410--457},
+ }
+
+@inproceedings{dolby07sep,
+ author = {Dolby, Julian and Vaziri, Mandana and Tip, Frank},
+ title = {Finding bugs efficiently with a SAT solver},
+ booktitle = {Proc. of ESEC/FSE},
+ year = {2007},
+ month = sep,
+ pages = {195--204},
+ }
+
+@inproceedings{santelices07nov,
+	Author = {Raul Santelices and Mary Jean Harrold},
+	Booktitle = {Proc. of Int'l Conf. on Automated Softw. Eng.},
+	Month = nov,
+	Pages = {343--352},
+	Title = {Efficiently monitoring data-flow test coverage},
+	Year = {2007}}
+
+@inproceedings{lam11oct,
+ author = {Lam, Patrick and Bodden, Eric and Lhot\'{a}k, Ondrej and Hendren, Laurie},
+ title = {Soot - a Java Bytecode Optimization Framework},
+ booktitle = {{Cetus Users and Compiler Infrastructure Workshop}},
+ year = 2011,
+ month = oct,
+}
+@inproceedings{santelices13jun,
+ author = {Raul Santelices and Yiji Zhang and Haipeng Cai and Siyuan Jiang},
+ title = {{DUA-Forensics}: A Fine-Grained Dependence Analysis and Instrumentation Framework Based on Soot},
+ booktitle = SOAP,
+ year = {2013},
+ month = jun,
+ pages = {13--18},
+}
+
+@article{allen76mar,
+ author = {Allen, F. E. and Cocke, J.},
+ title = {A program data flow analysis procedure},
+ journal = {Commun. ACM},
+ volume = {19},
+ number = {3},
+ year = {1976},
+ pages = {137},
+ }
+
+@Book{bohner96jun,
+  author    = {Shawn A. Bohner and Robert S. Arnold},
+  title     = {An introduction to software change impact analysis},
+  publisher = {Software Change Impact Analysis, IEEE Comp. Soc. Press, pp. 1--26},
+  year      = {1996},
+  month     = jun,
+}
+
+@article{rothermel97apr,
+  author = {Rothermel, G. and Harrold, M. J.},
+  title = {{A safe, efficient regression test selection technique}},
+  journal = {ACM Trans. on Softw. Eng. and Methodology},
+  volume = {6},
+  number = {2},
+  month = Apr,
+  year = 1997,
+  pages = {173--210},
+}
+
+@article{binkley95jan,
+ author = {David Binkley and Susan Horwitz and Thomas Reps},
+ title = {Program Integration for Languages with Procedure Calls},
+ journal = {{ACM Trans. on Softw. Eng. and Methodology}},
+ volume = {4},
+ number = {1},
+ pages = {3--35},
+ year = {1995},
+ month = jan,
+}
+
+@inproceedings{santelices10apr,
+	Author = {Raul Santelices and Mary Jean Harrold and Alessandro Orso},
+	Booktitle = ICST,
+	Month = apr,
+	Pages = {429--438},
+	Title = {Precisely Detecting Runtime Change Interactions for Evolving Software},
+	Year = {2010},
+}
+@inproceedings{ramanathan06sep,
+ author = {Ramanathan, Murali Krishna and Grama, Ananth and Jagannathan, Suresh},
+ title = {Sieve: A Tool for Automatically Detecting Variations Across Program Versions},
+ booktitle = ASE,
+ year = {2006},
+ month = sep,
+ pages = {241--252},
+}
+
+@article{korel88oct,
+ author = {Korel,, B. and Laski,, J.},
+ title = {Dynamic program slicing},
+ journal = {Inf. Process. Lett.},
+ volume = {29},
+ number = {3},
+ year = {1988},
+ pages = {155--163},
+ publisher = {Elsevier},
+ }
+@incollection{jonsson2005impact,
+  title={Impact analysis},
+  author={J{\"o}nsson, Per and Lindvall, Mikael},
+  booktitle={Engineering and managing software requirements},
+  pages={117--142},
+  year={2005},
+  publisher={Springer}
+}
+@inproceedings{goradia93jul,
+    author = {Tarak Goradia},
+    title = {Dynamic Impact Analysis: A Cost-effective Technique to Enforce Error-propagation},
+    booktitle = ISSTA,
+    pages = {171--181},
+    year = {1993},
+    month = jul,
+}
+
+@article{demillo78apr,
+ author = {DeMillo, R. A. and Lipton, R. J. and Sayward, F. G.},
+ title = {Hints on Test Data Selection: Help for the Practicing Programmer},
+ journal = {Computer},
+ volume = {11},
+ number = {4},
+ year = {1978},
+ month = apr,
+ pages = {34--41},
+ comment = {regarded as standard reference for mutation testing (also, see Hamlet77)},
+}
+
+@inproceedings{law03may,
+ author = {Law, James and Rothermel, Gregg},
+ title = {Whole program Path-Based dynamic impact analysis},
+ booktitle = {Proc. of Int'l Conf. on Softw. Eng.},
+ year = {2003},
+ month = may,
+ pages = {308--318},
+ }
+
+@inproceedings{ren04oct,
+  author = {Xiaoxia Ren and Fenil Shah and Frank Tip and Barbara G. Ryder and Ophelia Chesley},
+  title = {Chianti: a tool for change impact analysis of java programs},
+  booktitle = {Proc. of ACM Conf. on Obj. Oriented Prog. Syst., Lang., and Appl.},
+  year = {2004},
+  month = oct,
+  pages = {432--448},
+}
+
+@article{masri09oct,
+ author = {Masri,, Wassim and Podgurski,, Andy},
+ title = {Measuring the strength of information flows in programs},
+ journal = {ACM Trans. Softw. Eng. Methodol.},
+ volume = {19},
+ number = {2},
+ year = {2009},
+ pages = {1--33},
+}
+@inproceedings{masri2006empirical,
+  title={An empirical study of the strength of information flows in programs},
+  author={Masri, Wes and Podgurski, Andy},
+  booktitle={Proceedings of the 2006 International Workshop on Dynamic Systems Analysis},
+  pages={73--80},
+  year={2006},
+  %organization={ACM}
+}
+
+@inproceedings{sridharan07jun,
+ author = {Sridharan, Manu and Fink, Stephen J. and Bodik, Rastislav},
+ title = {Thin slicing},
+ booktitle = PLDI,
+ year = {2007},
+ month = jun,
+ pages = {112--122},
+}
+
+@article{podgurski90sep,
+ author = {A. Podgurski and L.A. Clarke},
+ title = {A Formal Model of Program Dependences and its Implications for Software Testing, Debugging, and Maintenance},
+ journal = IEEETSE,
+ volume = {16},
+ number = {9},
+ year = {1990},
+ pages = {965-979},
+}
+
+@book{aho86jan,
+  author = {Alfred V. Aho and Ravi Sethi and Jeffrey D. Ullman},
+  title = "Compilers: Principles, Techniques and Tools",
+  publisher = "A.-W.",
+  year = "1986"
+}
+@book{aho06sep,
+  author = {Alfred V. Aho and Monica Lam and Ravi Sethi and Jeffrey D. Ullman},
+  title = "Compilers: Principles, Techniques and Tools (2nd Ed.)",
+  month = sep,
+  year = 2006,
+}
+
+@article{do05oct,
+ author = {Do, Hyunsook and Elbaum, Sebastian and Rothermel, Gregg},
+ title = {Supporting Controlled Experimentation with Testing Techniques: An Infrastructure and its Potential Impact},
+ journal = {Emp. Softw. Eng.},
+ volume = {10},
+ number = {4},
+ pages = {405-435},
+ year = 2005,
+ }
+
+@article{mock05aug,
+ author = {Mock, Markus and Atkinson, Darren C. and Chambers, Craig and Eggers, Susan J.},
+ title = {{Program Slicing with Dynamic Points-to Sets}},
+ journal = IEEETSE,
+ year = {2005},
+ volume = 31,
+ number = 8,
+ pages = {657--678},
+ }
+
+@article{binkley07apr,
+ author = {Binkley, David and Gold, Nicolas and Harman, Mark},
+ title = {An empirical study of static program slice size},
+ journal = ACMTOSEM,
+ volume = {16},
+ number = {2},
+ year = {2007},
+}
+
+@article{milanova05jan,
+ author = {Milanova, Ana and Rountev, Atanas and Ryder, Barbara G.},
+ title = {Parameterized object sensitivity for points-to analysis for Java},
+ journal = ACMTOSEM,
+ volume = {14},
+ number = {1},
+ year = {2005},
+ pages = {1--41},
+}
+
+@inproceedings{bjorner09mar,
+ author = {Bj{\o}rner, Nikolaj and Tillmann, Nikolai and Voronkov, Andrei},
+ title = {Path Feasibility Analysis for String-Manipulating Programs},
+ booktitle = {Proc. of TACAS},
+ month = mar,
+ year = {2009},
+ pages = {307-321},
+}
+
+@inproceedings{zhang03may,
+author = {Xiangyu Zhang and Rajiv Gupta and Youtao Zhang},
+title = {Precise Dynamic Slicing Algorithms},
+booktitle = {Proc. of Int'l Conf. on Softw. Eng.},
+year = 2003,
+month = may,
+pages = {319-329},
+}
+
+@inproceedings{zhang05sep,
+  title={Matching execution histories of program versions},
+  author={Zhang, Xiangyu and Gupta, Rajiv},
+  booktitle={ACM SIGSOFT Software Engineering Notes},
+  volume={30},
+  number={5},
+  pages={197--206},
+  year={2005},
+  %organization={ACM}
+}
+
+@inproceedings{zhang06jun,
+ author = {Zhang, Xiangyu and Gupta, Neelam and Gupta, Rajiv},
+ title = {Pruning dynamic slices with confidence},
+ booktitle = PLDI,
+ year = {2006},
+ pages = {169--180},
+}
+
+@inproceedings{hoffman09jun,
+ author = {Hoffman, Kevin J. and Eugster, Patrick and Jagannathan, Suresh},
+ title = {{Semantics-aware Trace Analysis}},
+ booktitle = PLDI,
+ year = {2009},
+ month = jun,
+ pages = {453--464},
+}
+@inproceedings{sumner11jul,
+  author    = {William N. Sumner and Tao Bao and Xiangyu Zhang},
+  title     = {Selecting peers for execution comparison},
+  booktitle = ISSTA,
+  year      = {2011},
+  month     = jul,
+  pages     = {309--319},
+}
+@inproceedings{sumner13may,
+  author    = {William N. Sumner and Xiangyu Zhang},
+  title     = {Comparative Causality: Explaining the Differences Between Executions},
+  booktitle = ICSE,
+  year      = 2013,
+  month     = may,
+  pages     = {272--281},
+}
+
+@article{binkley06aug,
+title = "Theoretical foundations of dynamic program slicing",
+journal = "Theor. Comp. Sci.",
+volume = "360",
+number = "1",
+pages = "23-41",
+year = "2006",
+author = "David Binkley and Sebastian Danicic and Tibor Gyim\'{o}thy and Mark Harman and \'{A}. Kiss and Bogdan Korel",
+}
+
+@article{krinke06sep,
+ author = {Krinke, Jens},
+ title = {Effects of context on program slicing},
+ journal = {J. Syst. Softw.},
+ volume = {79},
+ number = {9},
+ year = {2006},
+ pages = {1249--1260},
+}
+
+@misc{santelices10nov,
+  author = 	 {Raul Santelices and Mary Jean Harrold},
+  title = 	 {Probabilistic Slicing for Predictive Impact Analysis},
+  howpublished =  {\textit{Tech. Rep. GIT-CERCS-10-10, Georgia Inst. of Tech.}},
+  year = 	 {2010},
+  month = 	 nov,
+  pages =	 {1-10},
+}
+
+@misc{andersen94may,
+  author = 	 {Lars Ole Andersen},
+  title = 	 {Program Analysis and Specialization for the {C} Programming Language},
+  howpublished =  {\textit{Ph.D. Thesis, DIKU, U. of Copenhagen}},
+  year = 	 {1994},
+  month = 	 may,
+}
+
+@article{canfora98nov,
+  author	= {Gerardo Canfora and Aniello Cimitile and Andrea De Lucia},
+  title		= {Conditioned Program Slicing},
+  journal	= {Information and Software Technology},
+  year		= {1998},
+  volume	= {40},
+  number	= {11-12},
+  pages		= {595-608},
+  month		= nov,
+}
+
+@article{pande94may,
+  author = {Pande, H.D. and Landi, W.A. and Ryder, B.G.},
+  title   = {Interprocedural def-use associations for {C} systems with single level pointers},
+  journal = {IEEE TSE},
+  year = 1994,
+  volume = 20,
+  number = 5,
+  pages = {385-403},
+ }
+
+@inproceedings{wagner07,
+ author = {Wagner, Stefan},
+ title = {Global Sensitivity Analysis of Predictor Models in Software Engineering},
+ booktitle = {Proc. of IEEE Int'l Workshop on Predictor Models in Software Engineering},
+ series = {PROMISE '07},
+ year = {2007},
+ month = may,
+ pages = {3--10},
+}
+
+@book{saltelli09mar,
+ author = {A. Saltelli and K. Chan and E. M. Scott},
+ publisher = {John Wiley \& Sons},
+ title = {Sentitivity Analysis},
+ year = {2009},
+ month = mar,
+}
+
+@inproceedings{harman07may,
+ author = {Harman, Mark},
+ title = {The Current State and Future of Search Based Software Engineering},
+ booktitle = {Future of Software Engineering},
+ year = {2007},
+ month = may,
+ pages = {342--357},
+ %series = {FOSE '07},
+}
+
+@inproceedings{harman09jul,
+ author = {Harman, Mark and Krinke, Jens and Ren, Jian and Yoo, Shin},
+ title = {Search based data sensitivity analysis applied to requirement engineering},
+ booktitle = {Proc. of Annual Conference on Genetic and Evolutionary Computation},
+ series = {GECCO '09},
+ year = {2009},
+ month = jul,
+ pages = {1681--1688},
+}
+
+@inproceedings{rodrigues05may,
+ author = {Rodrigues, Gena\'{\i}na N. and Rosenblum, David S. and Uchitel, Sebastian},
+ title = {Sensitivity analysis for a scenario-based reliability prediction model},
+ booktitle = {Works. Arch. Dep. Sys.},
+ year = {2005},
+ month = may,
+ pages = {1--5},
+}
+
+@article{jia11sep,
+ author={Yue Jia and Mark Harman},
+ title={An Analysis and Survey of the Development of Mutation Testing},
+ journal=IEEETSE,
+ year={2011},
+ volume={37},
+ number={5},
+ pages={649--678},
+}
+
+@techreport{agrawal89mar,
+ author = {Hiralal Agrawal and Richard A. Demillo and Bob Hathaway and William Hsu and Wynne Hsu and E. W. Krauser and R. J. Martin and Aditya P. Mathur and Eugene Spafford},
+ title = {Design Of Mutant Operators For The {C} Programming Language},
+ year = {1989},
+ month = mar,
+ institution = {Software Engineering Research Centre},
+}
+
+@inproceedings{agrawal90jun,
+ author = {Hiralal Agrawal and Joseph R. Horgan},
+ title = {Dynamic Program Slicing},
+ booktitle = PLDI,
+ year = {1990},
+ month = jun,
+ pages = {246--256},
+}
+
+@article{ma05jun,
+ author = {Ma, Yu-Seung and Offutt, Jeff and Kwon, Yong Rae},
+ title = {{MuJava}: an automated class mutation system},
+ journal = {Softw. Test. Verif. Reliab.},
+ volume = {15},
+ number = {2},
+ year = 2005,
+ month = jun,
+ pages = {97--133},
+}
+
+@misc{pitest12aug,
+  author = 	 {Henri Coles},
+  title = 	 {{PIT Mutation Testing tool}},
+  howpublished = {\url{http://pitest.org}},
+  note = {{Last accessed: Aug. 2012}}
+}
+
+@inproceedings{tsankov11mar,
+ author = {Tsankov, Petar and Jin, Wei and Orso, Alessandro and Sinha, Saurabh},
+ title = {Execution Hijacking: Improving Dynamic Analysis by Flying off Course},
+ booktitle = {Proc. of IEEE Int'l Conf. on Software Testing, Verification and Validation},
+ series = ICST,
+ year = {2011},
+ month = mar,
+ pages = {200--209},
+}
+
+@inproceedings{zhang06may,
+ author = {Zhang, Xiangyu and Gupta, Neelam and Gupta, Rajiv},
+ title = {Locating faults through automated predicate switching},
+ booktitle = {Proc. of Int'l Conf. on Softw. Eng.},
+ year = {2006},
+ month = may,
+ pages = {272--281},
+}
+
+@inproceedings{jeffrey08jul,
+ author = {Dennis Jeffrey and Neelam Gupta and Rajiv Gupta},
+ title = {Fault Localization using Value Replacement},
+ booktitle = {ISSTA '08},
+ year = {2008},
+ month = jul,
+}
+
+@inproceedings{jasz12mar,
+ author={Jasz, J. and Schrettner, L. and Beszedes, A. and Osztrogonac, C. and Gyimothy, T.},
+ title={{Impact Analysis Using Static Execute After in WebKit}},
+ booktitle={Software Maintenance and Reengineering (CSMR), 2012 16th European Conference on},
+ year={2012},
+ month=mar,
+ pages={95--104},
+}
+
+@inproceedings{petrenko09may,
+ author={Maksym Petrenko and V\'{a}clav Rajlich},
+ title={Variable Granularity for Improving Precision of Impact Analysis},
+ booktitle={{Proc. of IEEE Int'l Conference on Program Comprehension}},
+ year={2009},
+ month=may,
+ pages={10-19},
+}
+
+@inproceedings{acharya11may,
+    author = {Mithun Acharya and Brian Robinson},
+    title = {{Practical Change Impact Analysis Based on Static Program Slicing for Industrial Software Systems}},
+    booktitle = ICSESEIP,
+    month = may,
+    year = {2011},
+    pages = {746--765},
+}
+
+@article{poshyvanyk09feb,
+ author = {Poshyvanyk, Denys and Marcus, Andrian and Ferenc, Rudolf and Gyim\'{o}thy, Tibor},
+ title = {Using information retrieval based coupling measures for impact analysis},
+ journal = {Empirical Softw. Engg.},
+ volume = {14},
+ number = {1},
+ year = {2009},
+ pages = {5--32},
+}
+
+@inproceedings{vanciu10sep,
+ author={Vanciu, R. and Rajlich, V.},
+ title={Hidden dependencies in software systems},
+ booktitle={Proc. of IEEE Int'l Conference on Software Maintenance},
+ year={2010},
+ month=sep,
+ pages={1--10},
+}
+
+@inproceedings{gupta95oct,
+ author = {Rajiv Gupta and Mary Lou Soffa},
+ title = {{Hybrid Slicing: An Approach for Refining Static Slices Using Dynamic Information}},
+ booktitle = {{Proc. of ACM Int'l Symposium on Foundations of Software Engineering}},
+ year = {1995},
+ month = oct,
+ pages = {29--40},
+}
+
+@article{horwitz10jan,
+ author= {Susan Horwitz and Ben Liblit and Marina Polishchuk},
+ title = {{Better Debugging via Output Tracing and Callstack-sensitive Slicing}},
+ journal = IEEETSE,
+ year = {2010},
+ volume = {36},
+ number = {1},
+ pages = {7--19},
+}
+
+@inproceedings{santelices13may,
+  author    = {Raul Santelices and Yiji Zhang and Siyuan Jiang and Haipeng Cai and Ying-jie Zhang},
+  title     = {Quantitative Program Slicing: Separating Statements by Relevance},
+  booktitle = ICSENIER,
+  year      = 2013,
+  month     = may,
+  Pages = {1269--1272}
+}
+
+@inproceedings{andrews05may,
+ author = {Andrews, J. H. and Briand, L. C. and Labiche, Y.},
+ title = {{Is mutation an appropriate tool for testing experiments?}},
+ booktitle = ICSE,
+ year = {2005},
+ month = may,
+ pages = {402--411},
+}
+
+@inproceedings{arcuri11may,
+ author = {Andrea Arcuri and Lionel Briand},
+ title = {{A Practical Guide for Using Statistical Tests to Assess Randomized Algorithms in Software Engineering}},
+ booktitle = ICSE,
+ month = may,
+ year = {2011},
+ pages = {1--10},
+}
+@article {arcuri12stvr,
+ author = {Arcuri, Andrea and Briand, Lionel},
+ title = {A Hitchhiker's guide to statistical tests for assessing randomized algorithms in software engineering},
+ journal = JSTVR,
+ month = May,
+ year = {2014},
+ volume=24,
+ number=3,
+ pages = {219--250},
+ %note = {In press. Available online since Nov. 2012. DOI 10.1002/stvr.1486},
+}
+
+@book{walpole11jan,
+	author = {Walpole, Ronald E. and Myers, Raymond H. and Myers, Sharon L. and Ye, Keying E. },
+	isbn = {978--0321629111},
+	month = jan,
+	publisher = {{Prentice Hall}},
+	title = {{Probability and Statistics for Engineers and Scientists}},
+	year = {2011}
+}
+
+@inproceedings{beszedes02oct,
+ author={Beszedes, A. and Farago, C. and Mihaly Szabo, Z. and Csirik, J. and Gyimothy, T.},
+ booktitle=ICSM,
+ title={Union Slices For Program Maintenance},
+ year={2002},
+ month=oct,
+ pages={12--21},
+}
+
+@article{hall95mar,
+ year={1995},
+ journal={{Automated Software Engineering}},
+ volume={2},
+ number={1},
+ title={Automatic Extraction of Executable Program Subsets by Simultaneous Dynamic Program Slicing},
+ author={Hall, Robert J.},
+ pages={33--53},
+}
+
+@inproceedings{demillo96jan,
+ author = {DeMillo, Richard A. and Pan, Hsin and Spafford, Eugene H.},
+ title = {Critical Slicing for Software Fault Localization},
+ booktitle = ISSTA,
+ year = {1996},
+ month = jan,
+ pages = {121--134},
+}
+
+@article{offutt1996experimental,
+  title={An experimental determination of sufficient mutant operators},
+  author={Offutt, A Jefferson and Lee, Ammei and Rothermel, Gregg and Untch, Roland H and Zapf, Christian},
+  journal={ACM Transactions on Software Engineering and Methodology},
+  volume={5},
+  number={2},
+  pages={99--118},
+  year={1996},
+  publisher={ACM}
+}
+
+@inproceedings{gethers12may,
+ author = {Gethers, Malcom and Dit, Bogdan and Kagdi, Huzefa and Poshyvanyk, Denys},
+ title = {Integrated Impact Analysis For Managing Software Changes},
+ booktitle = ICSE,
+ year = {2012},
+ month = may,
+ pages = {430--440},
+}
+
+@article{santelices13sep,
+ author = {Santelices, Raul and Harrold, Mary Jean},
+ title = {{Demand-driven propagation-based strategies for testing changes}},
+ journal = {Software Testing, Verification and Reliability},
+ volume = {23},
+ number = {6},
+ pages = {499--528},
+ year = {2013},
+}
+
+@inproceedings{jin10apr,
+	Author = {Wei Jin and Alessandro Orso and Tao Xie},
+	Title = {Automated Behavioral Regression Testing},
+	Booktitle = {Proceedings of IEEE International Conference on Software Testing, Verification and Validation},
+	Month = apr,
+	Pages = {137-146},
+	Year = {2010}
+}
+
+@inproceedings{gupta03oct,
+ author={Gupta, N. and Heidepriem, Z.V.},
+ booktitle=ASE,
+ title={A New Structural Coverage Criterion for Dynamic Detection of Program Invariants},
+ year={2003},
+ month=oct,
+ pages={49-58},
+}
+
+@inproceedings{bohme13may,
+ author={Bohme, M. and Oliveira, B.C.D.S. and Roychoudhury, A.},
+ booktitle=ICSE,
+ title={Partition-based Regression Verification},
+ year={2013},
+ month=may,
+ pages={302-311},
+}
+
+@inproceedings{qi10sep,
+ author = {Qi, Dawei and Roychoudhury, Abhik and Liang, Zhenkai},
+ title = {Test Generation to Expose Changes in Evolving Programs},
+ booktitle = ASE,
+ year = {2010},
+ month = sep,
+ pages = {397--406},
+}
+
+@inproceedings{park12nov,
+ author = {Park, Sangmin and Hossain, B. M. Mainul and Hussain, Ishtiaque and Csallner, Christoph and Grechanik, Mark and Taneja, Kunal and Fu, Chen and Xie, Qing},
+ title = {CarFast: Achieving Higher Statement Coverage Faster},
+ booktitle = FSE,
+ year = {2012},
+ month = nov,
+ pages = {35:1--35:11},
+}
+
+@inproceedings{taneja11jul,
+ author = {Taneja, Kunal and Xie, Tao and Tillmann, Nikolai and de Halleux, Jonathan},
+ title = {{eXpress}: Guided Path Exploration for Efficient Regression Test Generation},
+ booktitle = ISSTA,
+ year = {2011},
+ month = jul,
+ pages = {1--11},
+}
+
+@inproceedings{pacheco07may,
+ author={Pacheco, C. and Lahiri, S.K. and Ernst, M.D. and Ball, T.},
+ booktitle=ICSE,
+ title={Feedback-Directed Random Test Generation},
+ year={2007},
+ month=may,
+ pages={75-84},
+}
+
+@inproceedings{zhang12nov,
+ author = {Yiji Zhang and Raul Santelices},
+ title = {Predicting Data Dependences for Slice Inspection Prioritization},
+ booktitle = IWPD,
+ year = {2012},
+ month = nov,
+ pages = {177--182},
+}
+
+@inproceedings{agrawal93sep,
+ author = {Agrawal, Hiralal and Horgan, Joseph R. and Krauser, Edward W. and London, Saul},
+ title = {Incremental Regression Testing},
+ booktitle = CSM,
+ year = {1993},
+ month = sep,
+ pages = {348--357},
+}
+
+@inproceedings{gyimothy99sep,
+ author = {Gyim\'{o}thy, Tibor and Besz{\'e}des, \'{A}rp\'{a}d and Forg\'{a}cs, Ist\'{a}n},
+ title = {An Efficient Relevant Slicing Method for Debugging},
+ booktitle = ESECFSE,
+ year = {1999},
+ month = sep,
+ pages = {303--321},
+}
+
+@misc{binkley13jun,
+ author = {David Binkley and Nicolas Gold and Mark Harman and Jens Krinke and Shin Yoo},
+ title = {Observation-Based Slicing},
+ howpublished = {RN/13/13, UCL, Dept. of Comp. Sci.},
+ year = {2013},
+ month = jun,
+}
+
+@inproceedings{cleve00augorg,
+  author    = {Holger Cleve and Andreas Zeller},
+  title     = {Finding Failure Causes through Automated Testing},
+  booktitle = {AADEBUG},
+  year      = {2000},
+  month     = aug,
+}
+@inproceedings{cleve00aug,
+  title={Finding failure causes through automated testing},
+  author={Holger Cleve and Andreas Zeller},
+  booktitle={Proceedings of International Workshop on Automated Debugging},
+  pages={254--259},
+  year={2000}
+}
+@inproceedings{bekrar2011finding,
+  title={Finding software vulnerabilities by smart fuzzing},
+  author={Bekrar, Sofia and Bekrar, Chaouki and Groz, Roland and Mounier, Laurent},
+  booktitle={Proceedings of International Conference on Software Testing, Verification and Validation},
+  pages={427--430},
+  year={2011},
+  %organization={IEEE}
+}
+@book{takanen2008fuzzing,
+  title={{Fuzzing for Software Security Testing and Quality Assurance}},
+  author={Takanen, Ari and Demott, Jared D and Miller, Charles},
+  year={2008},
+  publisher={Artech House}
+}
+@inproceedings{o2001analyzing,
+  title={Analyzing the impact of changing requirements},
+  author={O'Neal, James S},
+  booktitle={Proceedings of the IEEE International Conference on Software Maintenance (ICSM'01)},
+  pages={190},
+  year={2001},
+  %organization={IEEE Computer Society}
+}
+@inproceedings{briand2003impact,
+  title={Impact analysis and change management of UML models},
+  author={Briand, Lionel C and Labiche, Yvan and O'sullivan, L},
+  booktitle={Software Maintenance, 2003. ICSM 2003. Proceedings. International Conference on},
+  pages={256--265},
+  year={2003},
+  %organization={IEEE}
+}
+@inproceedings{boogerd2006prioritizing,
+  title={Prioritizing software inspection results using static profiling},
+  author={Boogerd, Cathal and Moonen, Leon},
+  booktitle={Source Code Analysis and Manipulation, 2006. SCAM'06. Sixth IEEE International Workshop on},
+  pages={149--160},
+  year={2006},
+  %organization={IEEE}
+}
+@article{rothermel2001prioritizing,
+  title={Prioritizing test cases for regression testing},
+  author={Rothermel, Gregg and Untch, Roland H. and Chu, Chengyun and Harrold, Mary Jean},
+  journal={Software Engineering, IEEE Transactions on},
+  volume={27},
+  number={10},
+  pages={929--948},
+  year={2001},
+  publisher={IEEE}
+}
+@article{rothermel1996analyzing,
+  title={Analyzing regression test selection techniques},
+  author={Rothermel, Gregg and Harrold, Mary Jean},
+  journal={Software Engineering, IEEE Transactions on},
+  volume={22},
+  number={8},
+  pages={529--551},
+  year={1996},
+  publisher={IEEE}
+}
+@article{schrettner2013impact,
+  title={Impact analysis in the presence of dependence clusters using Static Execute After in WebKit},
+  author={Schrettner, Lajos and J{\'a}sz, Judit and Gergely, Tam{\'a}s and Besz{\'e}des, {\'A}rp{\'a}d and Gyim{\'o}thy, Tibor},
+  journal={Journal of Software: Evolution and Process},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+@inproceedings{ajrnal1999change,
+  title={A change impact model for changeability assessment in object-oriented software systems},
+  author={Ajrnal Chaumun, M and Kabaili, Hind and Keller, Rudolf K and Lustman, Fran{\c{c}}ois},
+  booktitle={Software Maintenance and Reengineering, 1999. Proceedings of the Third European Conference on},
+  pages={130--138},
+  year={1999},
+  %organization={IEEE}
+}
+@article{chen2009holistic,
+  title={A holistic approach to managing software change impact},
+  author={Chen, Chung-Yang and Chen, Pei-Chi},
+  journal={Journal of Systems and Software},
+  volume={82},
+  number={12},
+  pages={2051--2067},
+  year={2009},
+  publisher={Elsevier}
+}
+@inproceedings{ceccarelli2010eclectic,
+  title={An eclectic approach for change impact analysis},
+  author={Ceccarelli, Michele and Cerulo, Luigi and Canfora, Gerardo and Di Penta, Massimiliano},
+  booktitle={Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering},
+  pages={163--166},
+  year={2010},
+  %organization={ACM}
+}
+@article{rovegard2008empirical,
+  title={An empirical study on views of importance of change impact analysis issues},
+  author={Rovegard, Per and Angelis, Lefteris and Wohlin, Claes},
+  journal={Software Engineering, IEEE Transactions on},
+  volume={34},
+  number={4},
+  pages={516--530},
+  year={2008},
+  publisher={IEEE}
+}
+@article{li2013fca,
+  title={FCA--CIA: An approach of using FCA to support cross-level change impact analysis for object oriented Java programs},
+  author={Li, Bixin and Sun, Xiaobing and Keung, Jacky},
+  journal={Information and Software Technology},
+  volume={55},
+  number={8},
+  pages={1437--1449},
+  year={2013},
+  publisher={Elsevier}
+}
+@inproceedings{tao2012software,
+  title={How do software engineers understand code changes?: an exploratory study in industry},
+  author={Tao, Yida and Dang, Yingnong and Xie, Tao and Zhang, Dongmei and Kim, Sunghun},
+  booktitle={Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering},
+  pages={51:1¨C-51:11},
+  year={2012},
+  %organization={ACM}
+}
+@inproceedings{latoza2006maintaining,
+  title={Maintaining mental models: a study of developer work habits},
+  author={LaToza, Thomas D and Venolia, Gina and DeLine, Robert},
+  booktitle={Proceedings of the 28th International Conference on Software Engineering},
+  pages={492--501},
+  year={2006},
+  %organization={ACM}
+}
+@inproceedings{Rajlich2014SEM,
+ author = {Rajlich, V\'{a}clav},
+ title = {Software Evolution and Maintenance},
+ booktitle = {Proceedings of the Conference on the Future of Software Engineering},
+ year = {2014},
+ isbn = {978-1-4503-2865-4},
+ pages = {133--144},
+ numpages = {12},
+ %address = {New York, NY, USA}
+ %series = {FOSE 2014},
+ }
+
+@inproceedings{de2008empirical,
+  title={An empirical study of software developers' management of dependencies and changes},
+  author={de Souza, Cleidson RB and Redmiles, David F},
+  booktitle={Proceedings of the 30th International Conference on Software Engineering},
+  pages={241--250},
+  year={2008},
+  %organization={ACM}
+}
+@article{ren2006identifying,
+  title={Identifying failure causes in java programs: An application of change impact analysis},
+  author={Ren, Xiaoxia and Chesley, Ophelia C and Ryder, Barbara G},
+  journal={Software Engineering, IEEE Transactions on},
+  volume={32},
+  number={9},
+  pages={718--732},
+  year={2006},
+  publisher={IEEE}
+}
+@article{lindvall1998well,
+  title={How well do experienced software developers predict software change?},
+  author={Lindvall, Mikael and Sandahl, Kristian},
+  journal={Journal of Systems and Software},
+  volume={43},
+  number={1},
+  pages={19--27},
+  year={1998},
+  publisher={Elsevier}
+}
+@inproceedings{briand2002automating,
+  title={Automating impact analysis and regression test selection based on {UML} designs},
+  author={Briand, Lionel C and Labiche, Yvan and Soccar, George},
+  booktitle={Proceedings of International Conference on Software Maintenance},
+  pages={252--261},
+  year={2002},
+  %organization={IEEE}
+}
+@inproceedings{cai14mar,
+  author = 	 {Haipeng Cai and Raul Santelices and Tianyu Xu},
+  title = 	 {Estimating the Accuracy of Dynamic Change-Impact Analysis using Sensitivity Analysis},
+  booktitle = {Proceedings of International Conference on Software Security and Reliability},
+  year = 	 {2014},
+  pages = {48--57}
+}
+@inproceedings{cai14diver,
+  author = 	 {Haipeng Cai and Raul Santelices},
+  title = 	 {DIVER: Precise Dynamic Impact Analysis Using Dependence-based Trace Pruning},
+  booktitle = {Proceedings of International Conference on Automated Software Engineering},
+  year = 	 {2014},
+  pages = {343--348}
+}
+@inproceedings{rungta2012change,
+  title={A change impact analysis to characterize evolving program behaviors},
+  author={Rungta, Neha and Person, Suzette and Branchaud, Joshua},
+  booktitle={IEEE International Conference on Software Maintenance},
+  pages={109--118},
+  year={2012},
+  %organization={IEEE}
+}
+@inproceedings{acharya2011practical,
+  title={Practical change impact analysis based on static program slicing for industrial software systems},
+  author={Acharya, Mithun and Robinson, Brian},
+  booktitle={Proceedings of the 33rd International Conference on Software Engineering},
+  pages={746--755},
+  year={2011},
+  %organization={ACM}
+}
+@INPROCEEDINGS{Breech2006IIM,
+    author={Breech, B. and Tegtmeyer, M. and Pollock, L.},
+    booktitle={Proceedings of the 22nd IEEE International Conference on Software Maintenance},
+    title={Integrating Influence Mechanisms into Impact Analysis for Increased Precision},
+    year={2006},
+    pages={55-65},
+    %doi={10.1109/ICSM.2006.33},
+    %ISSN={1063-6773}
+}
+@inproceedings{zeller2002isolating,
+  title={Isolating cause-effect chains from computer programs},
+  author={Zeller, Andreas},
+  booktitle={Proceedings of the 10th ACM SIGSOFT Symposium on Foundations of Software Engineering},
+  pages={1--10},
+  year={2002},
+  %organization={ACM}
+}
+@inproceedings{cai14sensa,
+  author = 	 {Haipeng Cai and Siyuan Jiang and Raul Santelices and Ying-jie Zhang and Yiji Zhang},
+  title = 	 {\textsc{SensA}: Sensitivity Analysis for Quantitative Change-impact Prediction},
+  booktitle =    SCAM,
+  year = 	 {2014},
+  pages = {165-174}
+}
+@inproceedings{jiang14sep,
+  author = 	 {Siyuan Jiang and Raul Santelices and Mark Grechanik and Haipeng Cai},
+  title = 	 {On the Accuracy of Forward Dynamic Slicing and its Effects on Software Maintenance},
+  booktitle =    SCAM,
+  year = 	 {2014},
+  pages = {145-154}
+}
+@article{cai15jss,
+  author = 	 {Haipeng Cai and Raul Santelices},
+  title = 	 {{A Comprehensive Study of the Predictive Accuracy of Dynamic Change-Impact Analysis}},
+  journal = {{Journal of Systems and Software (JSS)}},
+  year = 	 {2015},
+  volume = {103},
+  pages = {248--265}
+}
+@inproceedings{cai15diverplus,
+  author = 	 {Haipeng Cai and Raul Santelices},
+  title = 	 {{A Framework for Cost-effective Dependence-based Dynamic Impact Analysis}},
+  booktitle = {{22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER)}},
+  year = 	 {2015},
+  pages = {231--240}
+}
+@inproceedings{cai15tracer,
+  author = 	 {Haipeng Cai and Raul Santelices},
+  title = 	 {{TracerJD: Generic Trace-based Dynamic Dependence Analysis with Fine-grained Logging}},
+  booktitle = {{22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER)}},
+  year = 	 {2015},
+  note = {489--493}
+}
+@inproceedings{Zhang2013IMF,
+ author = {Zhang, Lingming and Zhang, Lu and Khurshid, Sarfraz},
+ title = {Injecting Mechanical Faults to Localize Developer Faults for Evolving Software},
+ booktitle = {Proceedings of the 2013 ACM SIGPLAN International Conference on Object Oriented Programming Systems Languages \&\#38; Applications},
+ year = {2013},
+ pages = {765--784}
+}
+@inproceedings{zhang2011localizing,
+  title={Localizing failure-inducing program edits based on spectrum information},
+  author={Zhang, Lingming and Kim, Miryung and Khurshid, Sarfraz},
+  booktitle={Software Maintenance (ICSM), 2011 27th IEEE International Conference on},
+  pages={23--32},
+  year={2011}
+}
+@article{ren2006identifying,
+  title={Identifying failure causes in java programs: An application of change impact analysis},
+  author={Ren, Xiaoxia and Chesley, Ophelia C and Ryder, Barbara G},
+  journal={Software Engineering, IEEE Transactions on},
+  volume={32},
+  number={9},
+  pages={718--732},
+  year={2006}
+}
+@INPROCEEDINGS{ima05abl,
+    author={Andrews, J.H. and Briand, L.C. and Labiche, Y.},
+    booktitle={27th International Conference on Software Engineering},
+    title={Is mutation an appropriate tool for testing experiments?},
+    year={2005},
+    pages={402-411}
+}
+@inproceedings{Just2014MVS,
+ author = {Just, Ren{\'e} and Jalali, Darioush and Inozemtseva, Laura and Ernst, Michael D. and Holmes, Reid and Fraser, Gordon},
+ title = {Are Mutants a Valid Substitute for Real Faults in Software Testing?},
+ booktitle = {Proceedings of the 22Nd ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+ year = {2014},
+ pages = {654--665}
+}
