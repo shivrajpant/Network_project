@@ -134,9 +134,7 @@ showstringspaces=false
   \pagestyle{plain}
 %  \pagestyle{empty}
 
-\title{Proposal Topic \\
-BitCoin Network Analysis
-}
+\title{Proposal Topic}
 
 \author{\IEEEauthorblockN{Shiv Raj Pant, Xiaoqin Fu}
 \IEEEauthorblockA{School of Electrical Engineering and Computer Science\\

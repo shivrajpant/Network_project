@@ -9,7 +9,7 @@
 \cite{javarone2018bitcoin}
 \cite{kumar2016edge}
 \cite{yan2018periphery}
-% existing works and insufficiencies
+% existing works and insufficiencies 
 
 
 % our work: its strength, how and why it works, results summary
@@ -21,13 +21,13 @@ The key expected contributions of this paper can be summarized as follows:
 \vspace{-2pt}
 \begin{itemize}
  \denseitems
- \item
- \item
+ \item 
+ \item 
+ 
+\item 
 
-\item
+ \item 
 
- \item
-We will use data sets, soc-sign-bitcoin-otc and soc-sign-bitcoin-alpha, from Stanford Large Network Dataset Collection.
-
+ 
 \end{itemize}
 %\vspace{6pt}
