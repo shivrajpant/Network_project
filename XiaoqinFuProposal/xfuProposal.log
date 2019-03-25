@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2019.1.18)  25 MAR 2019 06:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2019.1.18)  25 MAR 2019 16:30
 entering extended mode
-**C:/WSUStudy/Spring2019/591/XiaoqinFuProposal/xfuProposal.tex
-(C:/WSUStudy/Spring2019/591/XiaoqinFuProposal/xfuProposal.tex
+**C:/WSUStudy/Spring2019/591/Network_project/XiaoqinFuProposal/xfuProposal.tex
+(C:/WSUStudy/Spring2019/591/Network_project/XiaoqinFuProposal/xfuProposal.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\ieeetran\IEEEtran.cls
@@ -469,7 +469,7 @@ Package color Info: Driver file: pdftex.def on input line 130.
 (D:\CTEX\MiKTeX\tex\latex\was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(C:\WSUStudy\Spring2019\591\XiaoqinFuProposal\xfuProposal.aux)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
@@ -523,8 +523,8 @@ LaTeX Info: Redefining \ref on input line 37.
 LaTeX Info: Redefining \pageref on input line 37.
 LaTeX Info: Redefining \nameref on input line 37.
 
-(C:\WSUStudy\Spring2019\591\XiaoqinFuProposal\xfuProposal.out)
-(C:\WSUStudy\Spring2019\591\XiaoqinFuProposal\xfuProposal.out)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.out)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.out)
 \@outlinefile=\write3
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
@@ -545,65 +545,57 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <14> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
  [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-
-LaTeX Warning: Reference `fig:blkchain' on page 2 undefined on input line 72.
-
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-[2] <tangle.png, id=77, 580.1675pt x 472.76625pt>
+<tangle.png, id=63, 580.1675pt x 472.76625pt>
 File: tangle.png Graphic file (type png)
  <use tangle.png>
-Package pdftex.def Info: tangle.png used on input line 102.
+Package pdftex.def Info: tangle.png used on input line 87.
 (pdftex.def)             Requested size: 516.0pt x 420.50093pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+LaTeX Font Info:    Try loading font information for U+msa on input line 98.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 98.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 113.
-
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 98.
 
 (D:\CTEX\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3 <C:/WSUStudy/Spring2019/591/XiaoqinFuProposal/tangle.png>]
-(C:\WSUStudy\Spring2019\591\XiaoqinFuProposal\xfuProposal.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+) [2]
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.bbl
+[3 <C:/WSUStudy/Spring2019/591/Network_project/XiaoqinFuProposal/tangle.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
 
-(C:\WSUStudy\Spring2019\591\XiaoqinFuProposal\xfuProposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `xfuProposal.out' has not changed.
-(rerunfilecheck)             Checksum: 524BCD50B0FB4F58B787653B90BCA8A0;542.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: AB48E116B29788F3A2E7E88A4DCB1445;402.
  ) 
 Here is how much of TeX's memory you used:
- 8352 strings out of 495354
- 125261 string characters out of 3183859
- 202877 words of memory out of 3000000
- 11374 multiletter control sequences out of 15000+200000
- 41758 words of font info for 93 fonts, out of 3000000 for 9000
+ 8346 strings out of 495354
+ 125389 string characters out of 3183859
+ 203877 words of memory out of 3000000
+ 11371 multiletter control sequences out of 15000+200000
+ 40651 words of font info for 92 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,7n,38p,423b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,7n,38p,439b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
 i12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/CTEX/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-<D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/ur
-w/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on xfuProposal.pdf (4 pages, 191598 bytes).
+<D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on xfuProposal.pdf (4 pages, 182230 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
