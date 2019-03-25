@@ -49,26 +49,12 @@ Email: \{shiv.pant,  xiaoqin.fu\}@wsu.edu}}
 \maketitle
 \section{Introduction}
 BitCoin was developed in 2008 and 2009 as a radical new concept for money and currency~\cite{nakamoto2008bitcoin} using blockchain technology.
-Blockchain is a distributed database which keeps record in a distributed fashion.
-Figure~\ref{fig:blkchain} shows the schematic diagram of blockchain.
-A block encrypts the data using cryptographic hash function, such as SHA-256, and keeps record of next available block for traversing the blocks.
-Records are stored in a tree structure where the leaves stores the transaction information and other intermediate nodes store the hash values. The root of this tree belongs in a block containing the hash value generated from child nodes.
-The timestamp in a block is used to synchronize the position of a block in blockchain.
-A block also contains NONCE value, which is random unique number for a specific block.
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{blockchain.jpeg}}
-\caption{Blocks are connected in a chained fashion where each block contains
-many transaction records. This figure regenerated from~\cite{blkchaindiag}.}
-
-\label{fig:blkchain}
-\end{figure}
-
 Our research focuses on study data from a BITCOIN marketplace with interactions and ratings~\cite{aw2018analyzing}.
 They are (directed) weighted signed network (WSN) in which edge corresponds to some weight, the rating from user u to user v~\cite{moindrot2017trust}.
 They forms webs of trust between users allowing two unknown users to perform a transaction based on the aggregated trust~\cite{moindrot2017trust}.
 
 \section{Methodology}
-Our paper is to study the two trust networks: Bitcoin OTC web of trust network and Bitcoin Alpha web of trust network, and analyze the relationship between price and trust. Moveover, we will predict edge weights from time stamp data in the data sets.
+Our paper is to study and analyze the two trust networks: Bitcoin OTC web of trust network and Bitcoin Alpha web of trust network. Moveover, we will predict edge weights from time stamp data in the data sets.
 For the experiment, we will extract both topological and non-topological features from the networks~\cite{liben2007link}~\cite{al2006link}~\cite{davis2011multi}.
 \section{Data}
 We will use two data sets, soc-sign-bitcoin-otc and soc-sign-bitcoin-alpha, from~\cite{snapnets}.
@@ -81,16 +67,43 @@ It is similar in almost every way to the soc-sign-bitcoin-otc. It also has ratin
 is still active, the Alpha exchange is no longer active now~\cite{moindrot2017trust}.
 
 \section{Related work}
-\begin{itemize}
- \item
- \item
- \item
- \item
- \end{itemize}
+\subsection{Blockchain}
+Blockchain is a distributed database to keep records. 
+A block encrypts the data using cryptographic hash function, such as SHA-256, and keeps record of next available block for traversing the blocks.
+Records are stored in a tree structure where the leaves stores the transaction information and other intermediate nodes store the hash values. The root of this tree belongs in a block containing the hash value generated from child nodes.
+The timestamp in a block is used to synchronize the position of a block in blockchain.
+A block also contains NONCE value, which is random unique number for a specific block.
+
+\subsection{IOTA Network}
+IOTA (the Internet of Things Applications) network is an alternate of Bitcoin and it used tangle technology as a distributed ledger instead of Blockchain.
+Fig.~\ref{fig:tangle} shows the structure of the tangle network. The network is
+a directed acyclic graph where each node indicates an entity that issue and
+validate transaction~\cite{popov2016tangle}. The edge indicates the relationship
+between a new transaction and the old transaction. The direction of an edge is
+from a new transaction to one of the recent transactions. In order to approve a
+new transaction, tangle verify most recent two transactions, hence, each node
+points to at most two previous nodes in terms of time.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{tangle.png}}
+\caption{The network achitecture of tangle. Each node is an entity that issue and validate transaction.
+The nodes are growing from left to right accoring to the grow of time.
+This figure regenerated from~\cite{popov2016tangle}.
+}
+\label{fig:tangle}
+\end{figure}
+
+Each node contains information of two weights , one is its own weight (right--botton corner)
+and the another one is the cumulative weight (at center). The cumulative
+weight of a node is the summation of all the node weights along the path that ends at
+that node. According to Fig.~\ref{fig:tangle}, the nodes of all the paths those ended at node $F$ are
+A,B,C and E. The cumulative weight of $F$ is
+$\sum_{s\in\{A,B,C,D,F\}}{\omega(s)} = 1 + 3 + 1 + 1 + 3=9$. The weight feature
+prevent tangle from a quantum computer attack~\cite{popov2016tangle}.
+
 \section{Tentative plan}
 \begin{itemize}
- \item
- \item
+ \item  Bitcoin OTC web of trust network analysis
+ \item  Bitcoin Alpha web of trust network analysis
  \item
  \item
 \end{itemize}

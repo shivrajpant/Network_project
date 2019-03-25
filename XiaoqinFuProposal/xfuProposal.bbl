@@ -24,11 +24,6 @@
 \bibitem{nakamoto2008bitcoin}
 S.~Nakamoto, ``Bitcoin: A peer-to-peer electronic cash system,'' 2008.
 
-\bibitem{blkchaindiag}
-``blockchain diagram,''
-  \url{https://upload.wikimedia.org/wikipedia/commons/5/55/Bitcoin_Block_Data.svg},
-  [Last; accessed December-11].
-
 \bibitem{aw2018analyzing}
 E.~H. Aw, R.~Gera, K.~Hicks, N.~Koeppen, and C.~Teska, ``Analyzing preferential
   attachment in peer-to-peer bitcoin networks,'' in \emph{2018 IEEE/ACM
@@ -57,5 +52,8 @@ D.~Davis, R.~Lichtenwalter, and N.~V. Chawla, ``Multi-relational link
 \bibitem{snapnets}
 J.~Leskovec and A.~Krevl, ``{SNAP Datasets}: {Stanford} large network dataset
   collection,'' \url{http://snap.stanford.edu/data}, Jun. 2014.
+
+\bibitem{popov2016tangle}
+S.~Popov, ``The tangle,'' \emph{cit. on}, p. 131, 2016.
 
 \end{thebibliography}
