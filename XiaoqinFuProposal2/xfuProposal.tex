@@ -1,0 +1,102 @@
+% \documentclass[conference]{IEEEtran}
+\documentclass[onecolumn, 12pt]{IEEEtran}
+% \documentclass[12pt]
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{setspace}
+\doublespacing
+\usepackage{cite}
+\usepackage{wrapfig}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{indentfirst}
+% \usepackage[numbers,sort&compress]{natbib}
+\setlength{\parindent}{1em}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black
+}
+\usepackage{color}
+\newcommand{\add}[1]{\textcolor{blue}{#1}}
+\newcommand{\delete}[1]{\textcolor{red}{#1}}
+\definecolor{darkgrn}{rgb}{0, 0.8, 0}
+\newcommand{\modified}[1]{\textcolor{darkgrn}{#1}}
+\usepackage{gensymb}
+%%
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Proposal Topic \\
+BitCoin Exchange Trust Network Analysis
+}
+
+\author{\IEEEauthorblockN{Shiv Raj Pant, Xiaoqin Fu}\\
+\IEEEauthorblockA{School of Electrical Engineering and Computer Science\\
+Washington State University\\
+Pullman, WA\\
+Email: \{shiv.pant,  xiaoqin.fu\}@wsu.edu}}
+\maketitle
+\section{Introduction}
+BitCoin was developed in 2008 and 2009~\cite{nakamoto2008bitcoin} using blockchain technology.
+Our research focuses on study data from a BITCOIN marketplace with interactions and ratings~\cite{aw2018analyzing}.
+They are (directed) weighted signed network (WSN) in which edge corresponds to some weight, the rating from user u to user v~\cite{moindrot2017trust}.
+They forms webs of trust between users allowing two unknown users to perform a transaction based on the aggregated trust~\cite{moindrot2017trust}.
+
+Similar to Bitcoin, Ethereum is an open-source, public, decentralized platform to run smart contracts on a custom built blockchain. Its enables developers to store registries of promises or debts, move funds and create markets. The Ethereum project was bootstrapped in 2014 and is developed by the Ethereum Foundation, a Swiss non-profit~\cite{ethereum}. ERC-20 is a technical standard developed in late 2015 on the Ethereum blockchain for smart contracts~\cite{erc20}. It defines rules for Ethereum tokens within the larger Ethereum network, including transfer methods for the tokens between addresses and transfer methods~\cite{erc20}.
+\section{Methodology}
+Our paper is to study and analyze the two trust networks: Bitcoin OTC web of trust network and Bitcoin Alpha web of trust network. Moveover, we will analyze ethereum ERC-20 token transfer network.
+For the experiment, we will extract both topological and non-topological features from the networks~\cite{liben2007link}~\cite{al2006link}~\cite{davis2011multi}.
+\section{Data}
+We will use two data sets, soc-sign-bitcoin-otc and soc-sign-bitcoin-alpha, from~\cite{snapnets}.
+OTC and Alpha are two Bitcoin exchanges, which are open market websites allowing users to buy and sell things~\cite{snapnets}.
+The soc-sign-bitcoin-otc, Bitcoin OTC web of trust network, is a (directed) weighted signed network (WSN) with 5,881 nodes and 35,592 edges.
+On Bitcoin OTC, people can build up trust to exchange bitcoins with ratings from -10 (total distrust) to 10 (total trust) which are associated with how much a user trusts another user~\cite{moindrot2017trust}. A high rating is mapping the high trust. The data set has the rating times recorded as seconds since Epoch~\cite{snapnets}.
+
+And the soc-sign-bitcoin-alpha, Bitcoin Alpha web of trust network, is also a directed WSN with 3,783 nodes and 24,186 edges.
+It is similar in almost every way to the soc-sign-bitcoin-otc. It also has ratings from -10 to 10 and the rating times. While the OTC network
+is still active, the Alpha exchange is no longer active now~\cite{moindrot2017trust}.
+
+We also downloaded ETC-R20 data set and define the token network, in which each node is an address and each edge represents the transfer of the amount of the respective token between two addresses~\cite{victormeasuring}. The data set 190 nodes and 3000 edges, whose data are from 2019/01/01. We will download more ETC-R20 data sets with different time stamps.
+
+\section{Related work}
+\subsection{Blockchain}
+Blockchain is a distributed database to keep records.
+A block encrypts the data using cryptographic hash function, such as SHA-256, and keeps record of next available block for traversing the blocks.
+Records are stored in a tree structure where the leaves stores the transaction information and other intermediate nodes store the hash values. The root of this tree belongs in a block containing the hash value generated from child nodes.
+The timestamp in a block is used to synchronize the position of a block in blockchain.
+A block also contains NONCE value, which is random unique number for a specific block.
+\subsection{Blockchain network analysis}
+A blockchain can be separated to two layers from a graph-centric perspective: a network layer and an application layer. They can be represented by a communication graph and a content graph. For the analysis of content graphs, social network analysis techniques are commonly used. Many cryptocurrency-based approaches analyze content graphs relying on assumptions and ways of social network analysis. A content graphs can be modelled on three networks: a transaction network, address network and user/entity network. In transaction networks, the nodes are transactions, and the edges represent the flow of transferred assets. In an address network, the nodes are addresses, and a edges is a transaction between two of addresses. In a user/entity network, the nodes are real-world users/entities while the edges show the value flows~\cite{victormeasuring}.
+
+\subsection{IOTA network}
+IOTA (the Internet of Things Applications) network is an alternate of Bitcoin and it used tangle technology as a distributed ledger instead of Blockchain. The network is a directed acyclic graph where each node indicates an entity that issue and
+validate transaction~\cite{popov2016tangle}. The edge indicates the relationship
+between a new transaction and the old transaction. The direction of an edge is
+from a new transaction to one of the recent transactions. In order to approve a
+new transaction, tangle verify most recent two transactions, hence, each node
+points to at most two previous nodes in terms of time.
+
+\section{Tentative plan}
+\begin{itemize}
+ \item  Bitcoin OTC web of trust network analysis
+ \item  Bitcoin Alpha web of trust network analysis
+ \item  ETC-R20 token network analysis
+\end{itemize}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{IEEEtran}
+
+%\balance
+
+\bibliography{References}
+
+\end{document}
