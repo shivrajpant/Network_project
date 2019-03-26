@@ -1,7 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2019.1.18)  25 MAR 2019 23:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2019.1.18)  26 MAR 2019 00:18
 entering extended mode
-**C:/WSUStudy/Spring2019/591/Network_project/XiaoqinFuProposal/xfuProposal.tex
-(C:/WSUStudy/Spring2019/591/Network_project/XiaoqinFuProposal/xfuProposal.tex
+**C:/WSUStudy/Spring2019/591/Network_project/XiaoqinFuProposal2/xfuProposal.tex
+
+(C:/WSUStudy/Spring2019/591/Network_project/XiaoqinFuProposal2/xfuProposal.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\ieeetran\IEEEtran.cls
@@ -469,7 +470,7 @@ Package color Info: Driver file: pdftex.def on input line 130.
 (D:\CTEX\MiKTeX\tex\latex\was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.aux)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal2\xfuProposal.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
@@ -484,7 +485,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 37.
-
 (D:\CTEX\MiKTeX\tex\latex\base\ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -523,8 +523,8 @@ LaTeX Info: Redefining \ref on input line 37.
 LaTeX Info: Redefining \pageref on input line 37.
 LaTeX Info: Redefining \nameref on input line 37.
 
-(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.out)
-(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.out)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal2\xfuProposal.out)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal2\xfuProposal.out)
 \@outlinefile=\write3
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
@@ -538,7 +538,6 @@ LaTeX Info: Redefining \ohm on input line 37.
 Package gensymb Info: Using \textohm for \ohm on input line 37.
 Package gensymb Info: Using \textmu for \micro on input line 37.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 49.
-
 (D:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
 File: omsptm.fd 
 )
@@ -560,13 +559,12 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 91.
 (D:\CTEX\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.bbl)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal2\xfuProposal.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
-
 [3]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
 
-(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal\xfuProposal.aux)
+(C:\WSUStudy\Spring2019\591\Network_project\XiaoqinFuProposal2\xfuProposal.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `xfuProposal.out' has not changed.
@@ -574,17 +572,17 @@ Package rerunfilecheck Info: File `xfuProposal.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  8343 strings out of 495354
- 125370 string characters out of 3183859
+ 125383 string characters out of 3183859
  205726 words of memory out of 3000000
  11368 multiletter control sequences out of 15000+200000
  41158 words of font info for 93 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,6n,38p,952b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,6n,38p,953b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y8.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on xfuProposal.pdf (3 pages, 67542 bytes).
+Output written on xfuProposal.pdf (3 pages, 67856 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)
